@@ -1132,9 +1132,7 @@ Section Cross References
     gpio.o(.text.GpioInit) refers to gpio.o(.bss.IrCutInf) for IrCutInf
     gpio.o(.ARM.exidx.text.GpioInit) refers to gpio.o(.text.GpioInit) for [Anonymous Symbol]
     gpio.o(.text.EXTI1_IRQHandler) refers to gd32l23x_exti.o(.text.exti_interrupt_flag_get) for exti_interrupt_flag_get
-    gpio.o(.text.EXTI1_IRQHandler) refers to uart_dbg.o(.text.m_printf) for m_printf
     gpio.o(.text.EXTI1_IRQHandler) refers to gd32l23x_exti.o(.text.exti_interrupt_flag_clear) for exti_interrupt_flag_clear
-    gpio.o(.text.EXTI1_IRQHandler) refers to gpio.o(.rodata.str1.1) for [Anonymous Symbol]
     gpio.o(.text.EXTI1_IRQHandler) refers to main.o(.bss.DevStatus) for DevStatus
     gpio.o(.ARM.exidx.text.EXTI1_IRQHandler) refers to gpio.o(.text.EXTI1_IRQHandler) for [Anonymous Symbol]
     gpio.o(.text.EXTI5_9_IRQHandler) refers to gd32l23x_exti.o(.text.exti_interrupt_flag_get) for exti_interrupt_flag_get
@@ -3107,346 +3105,345 @@ Image Symbol Table
     [Anonymous Symbol]                       0x08000424   Section        0  gpio.o(.text.EXTI10_15_IRQHandler)
     __arm_cp.4_1                             0x080004a0   Number         4  gpio.o(.text.EXTI10_15_IRQHandler)
     [Anonymous Symbol]                       0x080004a4   Section        0  gpio.o(.text.EXTI1_IRQHandler)
-    __arm_cp.2_0                             0x080004c8   Number         4  gpio.o(.text.EXTI1_IRQHandler)
-    [Anonymous Symbol]                       0x080004cc   Section        0  gpio.o(.text.EXTI5_9_IRQHandler)
-    __arm_cp.3_0                             0x08000524   Number         4  gpio.o(.text.EXTI5_9_IRQHandler)
-    __arm_cp.3_1                             0x08000528   Number         4  gpio.o(.text.EXTI5_9_IRQHandler)
-    [Anonymous Symbol]                       0x0800052c   Section        0  gpio.o(.text.GpioInit)
-    __arm_cp.1_1                             0x08000640   Number         4  gpio.o(.text.GpioInit)
-    __arm_cp.1_2                             0x08000644   Number         4  gpio.o(.text.GpioInit)
-    __arm_cp.1_3                             0x08000648   Number         4  gpio.o(.text.GpioInit)
-    [Anonymous Symbol]                       0x0800064c   Section        0  uart_dbg.o(.text.HandleCmd)
-    __arm_cp.11_0                            0x080006ac   Number         4  uart_dbg.o(.text.HandleCmd)
-    __arm_cp.11_1                            0x080006b0   Number         4  uart_dbg.o(.text.HandleCmd)
-    __arm_cp.11_2                            0x080006b4   Number         4  uart_dbg.o(.text.HandleCmd)
-    [Anonymous Symbol]                       0x080006b8   Section        0  uart_to_host.o(.text.HandleHostCmd)
-    __arm_cp.9_1                             0x0800074c   Number         4  uart_to_host.o(.text.HandleHostCmd)
-    __arm_cp.9_2                             0x08000750   Number         4  uart_to_host.o(.text.HandleHostCmd)
-    __arm_cp.9_3                             0x08000754   Number         4  uart_to_host.o(.text.HandleHostCmd)
-    __arm_cp.9_4                             0x08000758   Number         4  uart_to_host.o(.text.HandleHostCmd)
-    __arm_cp.9_5                             0x0800075c   Number         4  uart_to_host.o(.text.HandleHostCmd)
-    [Anonymous Symbol]                       0x08000760   Section        0  uart_to_host.o(.text.HostCmdGetVer)
-    __arm_cp.8_1                             0x08000790   Number         4  uart_to_host.o(.text.HostCmdGetVer)
-    [Anonymous Symbol]                       0x08000794   Section        0  uart_to_host.o(.text.HostCmdIrCut)
-    __arm_cp.7_1                             0x080007dc   Number         4  uart_to_host.o(.text.HostCmdIrCut)
-    __arm_cp.7_2                             0x080007e0   Number         4  uart_to_host.o(.text.HostCmdIrCut)
-    [Anonymous Symbol]                       0x080007e4   Section        0  uart_to_host.o(.text.HostCmdPwrOff)
-    __arm_cp.6_1                             0x0800081c   Number         4  uart_to_host.o(.text.HostCmdPwrOff)
-    [Anonymous Symbol]                       0x08000820   Section        0  uart_to_host.o(.text.HostFeedDog)
-    __arm_cp.5_1                             0x08000868   Number         4  uart_to_host.o(.text.HostFeedDog)
-    __arm_cp.5_3                             0x0800086c   Number         4  uart_to_host.o(.text.HostFeedDog)
-    [Anonymous Symbol]                       0x08000870   Section        0  pwr_manage.o(.text.HostPwrDownSetPin)
-    __arm_cp.1_0                             0x08000894   Number         4  pwr_manage.o(.text.HostPwrDownSetPin)
-    __arm_cp.1_1                             0x08000898   Number         4  pwr_manage.o(.text.HostPwrDownSetPin)
-    [Anonymous Symbol]                       0x0800089c   Section        0  pwr_manage.o(.text.HostPwrUpSetPin)
-    __arm_cp.2_2                             0x0800093c   Number         4  pwr_manage.o(.text.HostPwrUpSetPin)
-    [Anonymous Symbol]                       0x08000940   Section        0  pwr_manage.o(.text.HostStartUpEnOut)
-    __arm_cp.3_2                             0x080009b8   Number         4  pwr_manage.o(.text.HostStartUpEnOut)
-    [Anonymous Symbol]                       0x080009bc   Section        0  uart_to_host.o(.text.InitHostUart)
-    __arm_cp.0_0                             0x08000a48   Number         4  uart_to_host.o(.text.InitHostUart)
-    __arm_cp.0_1                             0x08000a4c   Number         4  uart_to_host.o(.text.InitHostUart)
-    __arm_cp.0_2                             0x08000a50   Number         4  uart_to_host.o(.text.InitHostUart)
-    [Anonymous Symbol]                       0x08000a54   Section        0  uart_to_lock.o(.text.InitLockUart)
-    __arm_cp.0_1                             0x08000b24   Number         4  uart_to_lock.o(.text.InitLockUart)
-    [Anonymous Symbol]                       0x08000b28   Section        0  pwr_manage.o(.text.InitPowerManage)
-    __arm_cp.8_0                             0x08000ba0   Number         4  pwr_manage.o(.text.InitPowerManage)
-    __arm_cp.8_1                             0x08000ba4   Number         4  pwr_manage.o(.text.InitPowerManage)
-    __arm_cp.8_2                             0x08000ba8   Number         4  pwr_manage.o(.text.InitPowerManage)
-    [Anonymous Symbol]                       0x08000bac   Section        0  gpio.o(.text.IrCutService)
-    __arm_cp.0_0                             0x08000cb8   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_1                             0x08000cbc   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_2                             0x08000cc0   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_3                             0x08000cc4   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_4                             0x08000cc8   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_5                             0x08000ccc   Number         4  gpio.o(.text.IrCutService)
-    __arm_cp.0_6                             0x08000cd0   Number         4  gpio.o(.text.IrCutService)
-    [Anonymous Symbol]                       0x08000cd4   Section        0  uart_to_lock.o(.text.LPUART_IRQHandler)
-    __arm_cp.1_0                             0x08000d98   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
-    __arm_cp.1_2                             0x08000d9c   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
-    __arm_cp.1_3                             0x08000da0   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
-    __arm_cp.1_4                             0x08000da4   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
-    __arm_cp.1_5                             0x08000da8   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
-    [Anonymous Symbol]                       0x08000dac   Section        0  option.o(.text.LoadDevConfig)
-    __arm_cp.6_0                             0x08000df4   Number         4  option.o(.text.LoadDevConfig)
-    __arm_cp.6_1                             0x08000df8   Number         4  option.o(.text.LoadDevConfig)
-    __arm_cp.6_2                             0x08000dfc   Number         4  option.o(.text.LoadDevConfig)
-    [Anonymous Symbol]                       0x08000e00   Section        0  uart_to_lock.o(.text.LockReqSndHostData)
-    __arm_cp.3_0                             0x08000e44   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
-    __arm_cp.3_1                             0x08000e48   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
-    __arm_cp.3_3                             0x08000e4c   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
-    [Anonymous Symbol]                       0x08000e50   Section        0  pwr_manage.o(.text.ManagePower)
-    __arm_cp.7_1                             0x08000fb0   Number         4  pwr_manage.o(.text.ManagePower)
-    __arm_cp.7_2                             0x08000fb4   Number         4  pwr_manage.o(.text.ManagePower)
-    __arm_cp.7_3                             0x08000fb8   Number         4  pwr_manage.o(.text.ManagePower)
-    __arm_cp.7_4                             0x08000fbc   Number         4  pwr_manage.o(.text.ManagePower)
-    [Anonymous Symbol]                       0x08000fc0   Section        0  uart_dbg.o(.text.PmuCmd)
-    __arm_cp.8_0                             0x08001020   Number         4  uart_dbg.o(.text.PmuCmd)
-    __arm_cp.8_2                             0x08001024   Number         4  uart_dbg.o(.text.PmuCmd)
-    [Anonymous Symbol]                       0x08001028   Section        0  uart_to_host.o(.text.PointNextRcv)
-    __arm_cp.12_0                            0x0800104c   Number         4  uart_to_host.o(.text.PointNextRcv)
-    [Anonymous Symbol]                       0x08001050   Section        0  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_0                             0x080010b4   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_1                             0x080010b8   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_2                             0x080010bc   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_3                             0x080010c0   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_4                             0x080010c4   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    __arm_cp.4_5                             0x080010c8   Number         4  pwr_manage.o(.text.PrepareToSleep)
-    [Anonymous Symbol]                       0x080010cc   Section        0  uart_dbg.o(.text.PrintCmdChar)
-    __arm_cp.10_0                            0x08001108   Number         4  uart_dbg.o(.text.PrintCmdChar)
-    __arm_cp.10_1                            0x0800110c   Number         4  uart_dbg.o(.text.PrintCmdChar)
-    [Anonymous Symbol]                       0x08001110   Section        0  uart_to_host.o(.text.PrintRcvHostData)
-    __arm_cp.10_0                            0x0800117c   Number         4  uart_to_host.o(.text.PrintRcvHostData)
-    __arm_cp.10_1                            0x08001180   Number         4  uart_to_host.o(.text.PrintRcvHostData)
-    __arm_cp.10_3                            0x08001184   Number         4  uart_to_host.o(.text.PrintRcvHostData)
-    [Anonymous Symbol]                       0x08001188   Section        0  uart_to_lock.o(.text.PrintRcvLockData)
-    __arm_cp.2_0                             0x080011ec   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
-    __arm_cp.2_1                             0x080011f0   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
-    __arm_cp.2_2                             0x080011f4   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
-    [Anonymous Symbol]                       0x080011f8   Section        0  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_0                            0x08001550   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_1                            0x08001554   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_2                            0x08001558   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_3                            0x0800155c   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_4                            0x08001560   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    __arm_cp.13_5                            0x08001564   Number         4  uart_to_host.o(.text.RcvHostUartByte)
-    [Anonymous Symbol]                       0x08001568   Section        0  uart_to_host.o(.text.RcvHostUartService)
-    __arm_cp.14_0                            0x08001594   Number         4  uart_to_host.o(.text.RcvHostUartService)
-    [Anonymous Symbol]                       0x08001598   Section        0  uart_to_lock.o(.text.RcvLockUartByte)
-    __arm_cp.4_0                             0x08001680   Number         4  uart_to_lock.o(.text.RcvLockUartByte)
-    __arm_cp.4_1                             0x08001684   Number         4  uart_to_lock.o(.text.RcvLockUartByte)
-    [Anonymous Symbol]                       0x08001688   Section        0  uart_to_lock.o(.text.RcvLockUartService)
-    __arm_cp.5_0                             0x08001710   Number         4  uart_to_lock.o(.text.RcvLockUartService)
-    __arm_cp.5_1                             0x08001714   Number         4  uart_to_lock.o(.text.RcvLockUartService)
-    [Anonymous Symbol]                       0x08001718   Section        0  uart_dbg.o(.text.ReqDbgSndChar)
-    __arm_cp.2_1                             0x0800176c   Number         4  uart_dbg.o(.text.ReqDbgSndChar)
-    [Anonymous Symbol]                       0x08001770   Section        0  uart_to_host.o(.text.ReqSndHostPacket)
-    [Anonymous Symbol]                       0x080017f8   Section        0  uart_to_host.o(.text.ReqSndHostUart)
-    __arm_cp.3_0                             0x08001848   Number         4  uart_to_host.o(.text.ReqSndHostUart)
-    __arm_cp.3_1                             0x0800184c   Number         4  uart_to_host.o(.text.ReqSndHostUart)
-    [Anonymous Symbol]                       0x08001850   Section        0  option.o(.text.SaveDevConfig)
-    [Anonymous Symbol]                       0x08001864   Section        0  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_0                             0x080018b4   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_1                             0x080018b8   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_2                             0x080018bc   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_3                             0x080018c0   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_4                             0x080018c4   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_5                             0x080018c8   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_6                             0x080018cc   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_7                             0x080018d0   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_8                             0x080018d4   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    __arm_cp.0_9                             0x080018d8   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
-    [Anonymous Symbol]                       0x080018dc   Section        0  uart_dbg.o(.text.SetPrint)
-    __arm_cp.6_0                             0x08001960   Number         4  uart_dbg.o(.text.SetPrint)
-    __arm_cp.6_2                             0x08001964   Number         4  uart_dbg.o(.text.SetPrint)
-    __arm_cp.6_3                             0x08001968   Number         4  uart_dbg.o(.text.SetPrint)
-    __arm_cp.6_4                             0x0800196c   Number         4  uart_dbg.o(.text.SetPrint)
-    __arm_cp.6_5                             0x08001970   Number         4  uart_dbg.o(.text.SetPrint)
-    [Anonymous Symbol]                       0x08001974   Section        0  uart_dbg.o(.text.ShowDevConfig)
-    __arm_cp.7_0                             0x08001998   Number         4  uart_dbg.o(.text.ShowDevConfig)
-    __arm_cp.7_2                             0x0800199c   Number         4  uart_dbg.o(.text.ShowDevConfig)
-    __arm_cp.7_4                             0x080019a0   Number         4  uart_dbg.o(.text.ShowDevConfig)
-    [Anonymous Symbol]                       0x080019a4   Section        0  uart_to_host.o(.text.SndLockData)
-    __arm_cp.11_0                            0x080019b8   Number         4  uart_to_host.o(.text.SndLockData)
-    __arm_cp.11_1                            0x080019bc   Number         4  uart_to_host.o(.text.SndLockData)
-    SysTick_Config                           0x080019c1   Thumb Code    64  systick.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x080019c0   Section        0  systick.o(.text.SysTick_Config)
-    __arm_cp.1_0                             0x08001a00   Number         4  systick.o(.text.SysTick_Config)
-    __arm_cp.1_1                             0x08001a04   Number         4  systick.o(.text.SysTick_Config)
-    __arm_cp.1_2                             0x08001a08   Number         4  systick.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x08001a0c   Section        0  systick.o(.text.SysTick_Handler)
-    __arm_cp.3_0                             0x08001a18   Number         4  systick.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08001a1c   Section        0  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_0                             0x08001a98   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_1                             0x08001a9c   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_2                             0x08001aa0   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_3                             0x08001aa4   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_4                             0x08001aa8   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_5                             0x08001aac   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_6                             0x08001ab0   Number         4  system_gd32l23x.o(.text.SystemInit)
-    __arm_cp.0_7                             0x08001ab4   Number         4  system_gd32l23x.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x08001ab8   Section        0  uart_dbg.o(.text.TestSndHost)
-    [Anonymous Symbol]                       0x08001acc   Section        0  uart_to_host.o(.text.TrySndMcuDataToHost)
-    __arm_cp.2_0                             0x08001b04   Number         4  uart_to_host.o(.text.TrySndMcuDataToHost)
-    __arm_cp.2_1                             0x08001b08   Number         4  uart_to_host.o(.text.TrySndMcuDataToHost)
-    [Anonymous Symbol]                       0x08001b0c   Section        0  uart_to_host.o(.text.UART3_IRQHandler)
-    __arm_cp.1_0                             0x08001c14   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
-    __arm_cp.1_2                             0x08001c18   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
-    __arm_cp.1_4                             0x08001c1c   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
-    [Anonymous Symbol]                       0x08001c20   Section        0  uart_dbg.o(.text.USART0_IRQHandler)
-    __arm_cp.1_1                             0x08001cac   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
-    __arm_cp.1_2                             0x08001cb0   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
-    __arm_cp.1_3                             0x08001cb4   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
-    [Anonymous Symbol]                       0x08001cb8   Section        0  uart_dbg.o(.text.UartDbgInit)
-    __arm_cp.0_0                             0x08001d78   Number         4  uart_dbg.o(.text.UartDbgInit)
-    __arm_cp.0_1                             0x08001d7c   Number         4  uart_dbg.o(.text.UartDbgInit)
-    __arm_cp.0_3                             0x08001d80   Number         4  uart_dbg.o(.text.UartDbgInit)
-    [Anonymous Symbol]                       0x08001d84   Section        0  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_0                             0x08001e20   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_1                             0x08001e24   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_2                             0x08001e28   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_3                             0x08001e2c   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_4                             0x08001e30   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_5                             0x08001e34   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_6                             0x08001e38   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __arm_cp.5_7                             0x08001e3c   Number         4  pwr_manage.o(.text.WeakupRestore)
-    __NVIC_EnableIRQ                         0x08001e41   Thumb Code    48  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
-    [Anonymous Symbol]                       0x08001e40   Section        0  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
-    __arm_cp.2_0                             0x08001e70   Number         4  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
-    __NVIC_SetPriority                       0x08001e75   Thumb Code   124  gd32l23x_misc.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08001e74   Section        0  gd32l23x_misc.o(.text.__NVIC_SetPriority)
-    __NVIC_SetPriority                       0x08001ef1   Thumb Code   124  systick.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08001ef0   Section        0  systick.o(.text.__NVIC_SetPriority)
-    __arm_cp.2_0                             0x08001f6c   Number         4  systick.o(.text.__NVIC_SetPriority)
-    __arm_cp.2_1                             0x08001f70   Number         4  systick.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08001f74   Section        0  uart_dbg.o(.text.aToUShort)
-    [Anonymous Symbol]                       0x08002004   Section        0  option.o(.text.do_default)
-    [Anonymous Symbol]                       0x0800200c   Section        0  gd32l23x_exti.o(.text.exti_flag_clear)
-    [Anonymous Symbol]                       0x0800201c   Section        0  gd32l23x_exti.o(.text.exti_init)
-    __arm_cp.1_0                             0x080020ec   Number         4  gd32l23x_exti.o(.text.exti_init)
-    __arm_cp.1_1                             0x080020f0   Number         4  gd32l23x_exti.o(.text.exti_init)
-    __arm_cp.1_2                             0x080020f4   Number         4  gd32l23x_exti.o(.text.exti_init)
-    __arm_cp.1_3                             0x080020f8   Number         4  gd32l23x_exti.o(.text.exti_init)
-    [Anonymous Symbol]                       0x080020fc   Section        0  gd32l23x_exti.o(.text.exti_interrupt_flag_clear)
-    [Anonymous Symbol]                       0x0800210c   Section        0  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
-    __arm_cp.10_0                            0x08002134   Number         4  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
-    [Anonymous Symbol]                       0x08002138   Section        0  option.o(.text.fmc_erase_pages)
-    [Anonymous Symbol]                       0x0800215c   Section        0  option.o(.text.fmc_erase_pages_check)
-    __arm_cp.1_1                             0x08002190   Number         4  option.o(.text.fmc_erase_pages_check)
-    __arm_cp.1_2                             0x08002194   Number         4  option.o(.text.fmc_erase_pages_check)
-    [Anonymous Symbol]                       0x08002198   Section        0  gd32l23x_fmc.o(.text.fmc_flag_clear)
-    [Anonymous Symbol]                       0x080021a8   Section        0  gd32l23x_fmc.o(.text.fmc_lock)
-    [Anonymous Symbol]                       0x080021b4   Section        0  gd32l23x_fmc.o(.text.fmc_page_erase)
-    __arm_cp.12_1                            0x0800220c   Number         4  gd32l23x_fmc.o(.text.fmc_page_erase)
-    [Anonymous Symbol]                       0x08002210   Section        0  option.o(.text.fmc_program)
-    [Anonymous Symbol]                       0x0800224c   Section        0  option.o(.text.fmc_program_check)
-    __arm_cp.3_0                             0x0800228c   Number         4  option.o(.text.fmc_program_check)
-    __arm_cp.3_1                             0x08002290   Number         4  option.o(.text.fmc_program_check)
-    __arm_cp.3_2                             0x08002294   Number         4  option.o(.text.fmc_program_check)
-    __arm_cp.3_3                             0x08002298   Number         4  option.o(.text.fmc_program_check)
-    fmc_ready_wait                           0x0800229d   Thumb Code    90  gd32l23x_fmc.o(.text.fmc_ready_wait)
-    [Anonymous Symbol]                       0x0800229c   Section        0  gd32l23x_fmc.o(.text.fmc_ready_wait)
-    fmc_state_get                            0x080022f9   Thumb Code   124  gd32l23x_fmc.o(.text.fmc_state_get)
-    [Anonymous Symbol]                       0x080022f8   Section        0  gd32l23x_fmc.o(.text.fmc_state_get)
-    __arm_cp.34_0                            0x08002374   Number         4  gd32l23x_fmc.o(.text.fmc_state_get)
-    [Anonymous Symbol]                       0x08002378   Section        0  gd32l23x_fmc.o(.text.fmc_unlock)
-    __arm_cp.0_1                             0x08002394   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
-    __arm_cp.0_2                             0x08002398   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
-    __arm_cp.0_3                             0x0800239c   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
-    [Anonymous Symbol]                       0x080023a0   Section        0  gd32l23x_fmc.o(.text.fmc_word_program)
-    __arm_cp.15_0                            0x080023f0   Number         4  gd32l23x_fmc.o(.text.fmc_word_program)
-    [Anonymous Symbol]                       0x080023f4   Section        0  gd32l23x_gpio.o(.text.gpio_af_set)
-    [Anonymous Symbol]                       0x080024b4   Section        0  gd32l23x_gpio.o(.text.gpio_bit_reset)
-    [Anonymous Symbol]                       0x080024c4   Section        0  gd32l23x_gpio.o(.text.gpio_bit_set)
-    [Anonymous Symbol]                       0x080024d4   Section        0  gd32l23x_gpio.o(.text.gpio_input_bit_get)
-    [Anonymous Symbol]                       0x080024fe   Section        0  gd32l23x_gpio.o(.text.gpio_mode_set)
-    [Anonymous Symbol]                       0x0800258c   Section        0  gd32l23x_gpio.o(.text.gpio_output_options_set)
-    [Anonymous Symbol]                       0x08002618   Section        0  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
-    __arm_cp.1_0                             0x08002658   Number         4  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
-    __arm_cp.1_1                             0x0800265c   Number         4  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
-    [Anonymous Symbol]                       0x08002660   Section        0  gd32l23x_lpuart.o(.text.lpuart_data_receive)
-    __arm_cp.14_0                            0x0800266c   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_receive)
-    [Anonymous Symbol]                       0x08002670   Section        0  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
-    __arm_cp.13_0                            0x08002684   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
-    __arm_cp.13_1                            0x08002688   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
-    [Anonymous Symbol]                       0x0800268c   Section        0  gd32l23x_lpuart.o(.text.lpuart_deinit)
-    __arm_cp.0_0                             0x080026a4   Number         4  gd32l23x_lpuart.o(.text.lpuart_deinit)
-    [Anonymous Symbol]                       0x080026a8   Section        0  gd32l23x_lpuart.o(.text.lpuart_enable)
-    [Anonymous Symbol]                       0x080026b4   Section        0  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
-    __arm_cp.39_0                            0x080026d4   Number         4  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
-    [Anonymous Symbol]                       0x080026d8   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_disable)
-    [Anonymous Symbol]                       0x080026fc   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_enable)
-    [Anonymous Symbol]                       0x08002720   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_flag_get)
-    [Anonymous Symbol]                       0x08002780   Section        0  gd32l23x_lpuart.o(.text.lpuart_parity_config)
-    [Anonymous Symbol]                       0x080027a4   Section        0  gd32l23x_lpuart.o(.text.lpuart_receive_config)
-    [Anonymous Symbol]                       0x080027c0   Section        0  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
-    __arm_cp.4_1                             0x080027e8   Number         4  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
-    [Anonymous Symbol]                       0x080027ec   Section        0  gd32l23x_lpuart.o(.text.lpuart_transmit_config)
-    [Anonymous Symbol]                       0x08002808   Section        0  gd32l23x_lpuart.o(.text.lpuart_wakeup_enable)
-    [Anonymous Symbol]                       0x08002814   Section        0  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
-    __arm_cp.37_1                            0x0800283c   Number         4  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
-    [Anonymous Symbol]                       0x08002840   Section        0  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
-    __arm_cp.3_0                             0x08002864   Number         4  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
-    __arm_cp.3_1                             0x08002868   Number         4  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
-    [Anonymous Symbol]                       0x0800286c   Section        0  uart_dbg.o(.text.m_pow)
-    [Anonymous Symbol]                       0x08002894   Section        0  uart_dbg.o(.text.m_printf)
-    [Anonymous Symbol]                       0x08002c5c   Section        0  main.o(.text.main)
-    __arm_cp.2_0                             0x08002d34   Number         4  main.o(.text.main)
-    __arm_cp.2_1                             0x08002d38   Number         4  main.o(.text.main)
-    __arm_cp.2_2                             0x08002d3c   Number         4  main.o(.text.main)
-    __arm_cp.2_3                             0x08002d40   Number         4  main.o(.text.main)
-    __arm_cp.2_4                             0x08002d44   Number         4  main.o(.text.main)
-    __arm_cp.2_5                             0x08002d48   Number         4  main.o(.text.main)
-    __arm_cp.2_6                             0x08002d4c   Number         4  main.o(.text.main)
-    [Anonymous Symbol]                       0x08002d50   Section        0  gd32l23x_misc.o(.text.nvic_irq_enable)
-    [Anonymous Symbol]                       0x08002d7c   Section        0  gd32l23x_misc.o(.text.nvic_vector_table_set)
-    __arm_cp.7_0                             0x08002d98   Number         4  gd32l23x_misc.o(.text.nvic_vector_table_set)
-    __arm_cp.7_1                             0x08002d9c   Number         4  gd32l23x_misc.o(.text.nvic_vector_table_set)
-    [Anonymous Symbol]                       0x08002da0   Section        0  gd32l23x_pmu.o(.text.pmu_ldo_output_select)
-    [Anonymous Symbol]                       0x08002dbc   Section        0  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
-    __arm_cp.10_0                            0x08002e2c   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
-    __arm_cp.10_1                            0x08002e30   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
-    __arm_cp.10_2                            0x08002e34   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
-    [Anonymous Symbol]                       0x08002e38   Section        0  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_10                           0x0800324c   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_11                           0x08003250   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_14                           0x0800325c   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_15                           0x08003260   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_2                            0x080033f8   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_4                            0x080033fc   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_6                            0x08003400   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    __arm_cp.40_7                            0x08003404   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    [Anonymous Symbol]                       0x08003408   Section        0  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
-    __arm_cp.20_0                            0x08003424   Number         4  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
-    [Anonymous Symbol]                       0x08003428   Section        0  gd32l23x_rcu.o(.text.rcu_periph_clock_disable)
-    [Anonymous Symbol]                       0x0800344c   Section        0  gd32l23x_rcu.o(.text.rcu_periph_clock_enable)
-    [Anonymous Symbol]                       0x08003470   Section        0  gd32l23x_rcu.o(.text.rcu_periph_reset_disable)
-    [Anonymous Symbol]                       0x08003494   Section        0  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
-    __arm_cp.5_0                             0x080034b8   Number         4  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
-    [Anonymous Symbol]                       0x080034bc   Section        0  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    __arm_cp.1_0                             0x08003560   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    __arm_cp.1_1                             0x08003564   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    __arm_cp.1_2                             0x08003568   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    __arm_cp.1_3                             0x0800356c   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    system_clock_16m_irc16m                  0x08003571   Thumb Code    52  system_gd32l23x.o(.text.system_clock_16m_irc16m)
-    [Anonymous Symbol]                       0x08003570   Section        0  system_gd32l23x.o(.text.system_clock_16m_irc16m)
-    __arm_cp.3_0                             0x080035a4   Number         4  system_gd32l23x.o(.text.system_clock_16m_irc16m)
-    system_clock_config                      0x080035a9   Thumb Code     8  system_gd32l23x.o(.text.system_clock_config)
-    [Anonymous Symbol]                       0x080035a8   Section        0  system_gd32l23x.o(.text.system_clock_config)
-    [Anonymous Symbol]                       0x080035b0   Section        0  systick.o(.text.systick_config)
-    __arm_cp.0_0                             0x080035d8   Number         4  systick.o(.text.systick_config)
-    [Anonymous Symbol]                       0x080035dc   Section        0  gd32l23x_usart.o(.text.usart_baudrate_set)
-    __arm_cp.1_4                             0x080036b0   Number         4  gd32l23x_usart.o(.text.usart_baudrate_set)
-    [Anonymous Symbol]                       0x080036b4   Section        0  gd32l23x_usart.o(.text.usart_data_receive)
-    [Anonymous Symbol]                       0x080036c4   Section        0  gd32l23x_usart.o(.text.usart_data_transmit)
-    __arm_cp.18_0                            0x080036dc   Number         4  gd32l23x_usart.o(.text.usart_data_transmit)
-    [Anonymous Symbol]                       0x080036e0   Section        0  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_0                             0x08003758   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_1                             0x0800375c   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_2                             0x08003760   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_3                             0x08003764   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_4                             0x08003768   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_5                             0x0800376c   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_6                             0x08003770   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    __arm_cp.0_7                             0x08003774   Number         4  gd32l23x_usart.o(.text.usart_deinit)
-    [Anonymous Symbol]                       0x08003778   Section        0  gd32l23x_usart.o(.text.usart_enable)
-    [Anonymous Symbol]                       0x0800378a   Section        0  gd32l23x_usart.o(.text.usart_interrupt_disable)
-    [Anonymous Symbol]                       0x080037ac   Section        0  gd32l23x_usart.o(.text.usart_interrupt_enable)
-    [Anonymous Symbol]                       0x080037ce   Section        0  gd32l23x_usart.o(.text.usart_interrupt_flag_get)
-    [Anonymous Symbol]                       0x08003830   Section        0  gd32l23x_usart.o(.text.usart_parity_config)
-    [Anonymous Symbol]                       0x0800385a   Section        0  gd32l23x_usart.o(.text.usart_receive_config)
-    [Anonymous Symbol]                       0x08003878   Section        0  gd32l23x_usart.o(.text.usart_stop_bit_set)
-    [Anonymous Symbol]                       0x080038a2   Section        0  gd32l23x_usart.o(.text.usart_transmit_config)
-    [Anonymous Symbol]                       0x080038c0   Section        0  gd32l23x_usart.o(.text.usart_word_length_set)
-    i.__scatterload_copy                     0x080038ea   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080038f8   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080038fa   Section       14  handlers.o(i.__scatterload_zeroinit)
-    [Anonymous Symbol]                       0x080039d0   Section        0  main.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080039ec   Section        0  uart_dbg.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003a17   Section        0  gpio.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003a69   Section        0  option.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003ac0   Section        0  pwr_manage.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003b3e   Section        0  uart_to_host.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003be4   Section        0  uart_to_lock.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080004c4   Section        0  gpio.o(.text.EXTI5_9_IRQHandler)
+    __arm_cp.3_0                             0x0800051c   Number         4  gpio.o(.text.EXTI5_9_IRQHandler)
+    __arm_cp.3_1                             0x08000520   Number         4  gpio.o(.text.EXTI5_9_IRQHandler)
+    [Anonymous Symbol]                       0x08000524   Section        0  gpio.o(.text.GpioInit)
+    __arm_cp.1_1                             0x08000638   Number         4  gpio.o(.text.GpioInit)
+    __arm_cp.1_2                             0x0800063c   Number         4  gpio.o(.text.GpioInit)
+    __arm_cp.1_3                             0x08000640   Number         4  gpio.o(.text.GpioInit)
+    [Anonymous Symbol]                       0x08000644   Section        0  uart_dbg.o(.text.HandleCmd)
+    __arm_cp.11_0                            0x080006a4   Number         4  uart_dbg.o(.text.HandleCmd)
+    __arm_cp.11_1                            0x080006a8   Number         4  uart_dbg.o(.text.HandleCmd)
+    __arm_cp.11_2                            0x080006ac   Number         4  uart_dbg.o(.text.HandleCmd)
+    [Anonymous Symbol]                       0x080006b0   Section        0  uart_to_host.o(.text.HandleHostCmd)
+    __arm_cp.9_1                             0x08000744   Number         4  uart_to_host.o(.text.HandleHostCmd)
+    __arm_cp.9_2                             0x08000748   Number         4  uart_to_host.o(.text.HandleHostCmd)
+    __arm_cp.9_3                             0x0800074c   Number         4  uart_to_host.o(.text.HandleHostCmd)
+    __arm_cp.9_4                             0x08000750   Number         4  uart_to_host.o(.text.HandleHostCmd)
+    __arm_cp.9_5                             0x08000754   Number         4  uart_to_host.o(.text.HandleHostCmd)
+    [Anonymous Symbol]                       0x08000758   Section        0  uart_to_host.o(.text.HostCmdGetVer)
+    __arm_cp.8_1                             0x08000788   Number         4  uart_to_host.o(.text.HostCmdGetVer)
+    [Anonymous Symbol]                       0x0800078c   Section        0  uart_to_host.o(.text.HostCmdIrCut)
+    __arm_cp.7_1                             0x080007d4   Number         4  uart_to_host.o(.text.HostCmdIrCut)
+    __arm_cp.7_2                             0x080007d8   Number         4  uart_to_host.o(.text.HostCmdIrCut)
+    [Anonymous Symbol]                       0x080007dc   Section        0  uart_to_host.o(.text.HostCmdPwrOff)
+    __arm_cp.6_1                             0x08000814   Number         4  uart_to_host.o(.text.HostCmdPwrOff)
+    [Anonymous Symbol]                       0x08000818   Section        0  uart_to_host.o(.text.HostFeedDog)
+    __arm_cp.5_1                             0x08000860   Number         4  uart_to_host.o(.text.HostFeedDog)
+    __arm_cp.5_3                             0x08000864   Number         4  uart_to_host.o(.text.HostFeedDog)
+    [Anonymous Symbol]                       0x08000868   Section        0  pwr_manage.o(.text.HostPwrDownSetPin)
+    __arm_cp.1_0                             0x0800088c   Number         4  pwr_manage.o(.text.HostPwrDownSetPin)
+    __arm_cp.1_1                             0x08000890   Number         4  pwr_manage.o(.text.HostPwrDownSetPin)
+    [Anonymous Symbol]                       0x08000894   Section        0  pwr_manage.o(.text.HostPwrUpSetPin)
+    __arm_cp.2_2                             0x08000934   Number         4  pwr_manage.o(.text.HostPwrUpSetPin)
+    [Anonymous Symbol]                       0x08000938   Section        0  pwr_manage.o(.text.HostStartUpEnOut)
+    __arm_cp.3_2                             0x080009b0   Number         4  pwr_manage.o(.text.HostStartUpEnOut)
+    [Anonymous Symbol]                       0x080009b4   Section        0  uart_to_host.o(.text.InitHostUart)
+    __arm_cp.0_0                             0x08000a40   Number         4  uart_to_host.o(.text.InitHostUart)
+    __arm_cp.0_1                             0x08000a44   Number         4  uart_to_host.o(.text.InitHostUart)
+    __arm_cp.0_2                             0x08000a48   Number         4  uart_to_host.o(.text.InitHostUart)
+    [Anonymous Symbol]                       0x08000a4c   Section        0  uart_to_lock.o(.text.InitLockUart)
+    __arm_cp.0_1                             0x08000b1c   Number         4  uart_to_lock.o(.text.InitLockUart)
+    [Anonymous Symbol]                       0x08000b20   Section        0  pwr_manage.o(.text.InitPowerManage)
+    __arm_cp.8_0                             0x08000b98   Number         4  pwr_manage.o(.text.InitPowerManage)
+    __arm_cp.8_1                             0x08000b9c   Number         4  pwr_manage.o(.text.InitPowerManage)
+    __arm_cp.8_2                             0x08000ba0   Number         4  pwr_manage.o(.text.InitPowerManage)
+    [Anonymous Symbol]                       0x08000ba4   Section        0  gpio.o(.text.IrCutService)
+    __arm_cp.0_0                             0x08000cb0   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_1                             0x08000cb4   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_2                             0x08000cb8   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_3                             0x08000cbc   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_4                             0x08000cc0   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_5                             0x08000cc4   Number         4  gpio.o(.text.IrCutService)
+    __arm_cp.0_6                             0x08000cc8   Number         4  gpio.o(.text.IrCutService)
+    [Anonymous Symbol]                       0x08000ccc   Section        0  uart_to_lock.o(.text.LPUART_IRQHandler)
+    __arm_cp.1_0                             0x08000d90   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
+    __arm_cp.1_2                             0x08000d94   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
+    __arm_cp.1_3                             0x08000d98   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
+    __arm_cp.1_4                             0x08000d9c   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
+    __arm_cp.1_5                             0x08000da0   Number         4  uart_to_lock.o(.text.LPUART_IRQHandler)
+    [Anonymous Symbol]                       0x08000da4   Section        0  option.o(.text.LoadDevConfig)
+    __arm_cp.6_0                             0x08000dec   Number         4  option.o(.text.LoadDevConfig)
+    __arm_cp.6_1                             0x08000df0   Number         4  option.o(.text.LoadDevConfig)
+    __arm_cp.6_2                             0x08000df4   Number         4  option.o(.text.LoadDevConfig)
+    [Anonymous Symbol]                       0x08000df8   Section        0  uart_to_lock.o(.text.LockReqSndHostData)
+    __arm_cp.3_0                             0x08000e3c   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
+    __arm_cp.3_1                             0x08000e40   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
+    __arm_cp.3_3                             0x08000e44   Number         4  uart_to_lock.o(.text.LockReqSndHostData)
+    [Anonymous Symbol]                       0x08000e48   Section        0  pwr_manage.o(.text.ManagePower)
+    __arm_cp.7_1                             0x08000fa8   Number         4  pwr_manage.o(.text.ManagePower)
+    __arm_cp.7_2                             0x08000fac   Number         4  pwr_manage.o(.text.ManagePower)
+    __arm_cp.7_3                             0x08000fb0   Number         4  pwr_manage.o(.text.ManagePower)
+    __arm_cp.7_4                             0x08000fb4   Number         4  pwr_manage.o(.text.ManagePower)
+    [Anonymous Symbol]                       0x08000fb8   Section        0  uart_dbg.o(.text.PmuCmd)
+    __arm_cp.8_0                             0x08001018   Number         4  uart_dbg.o(.text.PmuCmd)
+    __arm_cp.8_2                             0x0800101c   Number         4  uart_dbg.o(.text.PmuCmd)
+    [Anonymous Symbol]                       0x08001020   Section        0  uart_to_host.o(.text.PointNextRcv)
+    __arm_cp.12_0                            0x08001044   Number         4  uart_to_host.o(.text.PointNextRcv)
+    [Anonymous Symbol]                       0x08001048   Section        0  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_0                             0x080010ac   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_1                             0x080010b0   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_2                             0x080010b4   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_3                             0x080010b8   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_4                             0x080010bc   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    __arm_cp.4_5                             0x080010c0   Number         4  pwr_manage.o(.text.PrepareToSleep)
+    [Anonymous Symbol]                       0x080010c4   Section        0  uart_dbg.o(.text.PrintCmdChar)
+    __arm_cp.10_0                            0x08001100   Number         4  uart_dbg.o(.text.PrintCmdChar)
+    __arm_cp.10_1                            0x08001104   Number         4  uart_dbg.o(.text.PrintCmdChar)
+    [Anonymous Symbol]                       0x08001108   Section        0  uart_to_host.o(.text.PrintRcvHostData)
+    __arm_cp.10_0                            0x08001174   Number         4  uart_to_host.o(.text.PrintRcvHostData)
+    __arm_cp.10_1                            0x08001178   Number         4  uart_to_host.o(.text.PrintRcvHostData)
+    __arm_cp.10_3                            0x0800117c   Number         4  uart_to_host.o(.text.PrintRcvHostData)
+    [Anonymous Symbol]                       0x08001180   Section        0  uart_to_lock.o(.text.PrintRcvLockData)
+    __arm_cp.2_0                             0x080011e4   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
+    __arm_cp.2_1                             0x080011e8   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
+    __arm_cp.2_2                             0x080011ec   Number         4  uart_to_lock.o(.text.PrintRcvLockData)
+    [Anonymous Symbol]                       0x080011f0   Section        0  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_0                            0x08001548   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_1                            0x0800154c   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_2                            0x08001550   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_3                            0x08001554   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_4                            0x08001558   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    __arm_cp.13_5                            0x0800155c   Number         4  uart_to_host.o(.text.RcvHostUartByte)
+    [Anonymous Symbol]                       0x08001560   Section        0  uart_to_host.o(.text.RcvHostUartService)
+    __arm_cp.14_0                            0x0800158c   Number         4  uart_to_host.o(.text.RcvHostUartService)
+    [Anonymous Symbol]                       0x08001590   Section        0  uart_to_lock.o(.text.RcvLockUartByte)
+    __arm_cp.4_0                             0x08001678   Number         4  uart_to_lock.o(.text.RcvLockUartByte)
+    __arm_cp.4_1                             0x0800167c   Number         4  uart_to_lock.o(.text.RcvLockUartByte)
+    [Anonymous Symbol]                       0x08001680   Section        0  uart_to_lock.o(.text.RcvLockUartService)
+    __arm_cp.5_0                             0x08001708   Number         4  uart_to_lock.o(.text.RcvLockUartService)
+    __arm_cp.5_1                             0x0800170c   Number         4  uart_to_lock.o(.text.RcvLockUartService)
+    [Anonymous Symbol]                       0x08001710   Section        0  uart_dbg.o(.text.ReqDbgSndChar)
+    __arm_cp.2_1                             0x08001764   Number         4  uart_dbg.o(.text.ReqDbgSndChar)
+    [Anonymous Symbol]                       0x08001768   Section        0  uart_to_host.o(.text.ReqSndHostPacket)
+    [Anonymous Symbol]                       0x080017f0   Section        0  uart_to_host.o(.text.ReqSndHostUart)
+    __arm_cp.3_0                             0x08001840   Number         4  uart_to_host.o(.text.ReqSndHostUart)
+    __arm_cp.3_1                             0x08001844   Number         4  uart_to_host.o(.text.ReqSndHostUart)
+    [Anonymous Symbol]                       0x08001848   Section        0  option.o(.text.SaveDevConfig)
+    [Anonymous Symbol]                       0x0800185c   Section        0  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_0                             0x080018ac   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_1                             0x080018b0   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_2                             0x080018b4   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_3                             0x080018b8   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_4                             0x080018bc   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_5                             0x080018c0   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_6                             0x080018c4   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_7                             0x080018c8   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_8                             0x080018cc   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    __arm_cp.0_9                             0x080018d0   Number         4  pwr_manage.o(.text.SetPinForReducePwr)
+    [Anonymous Symbol]                       0x080018d4   Section        0  uart_dbg.o(.text.SetPrint)
+    __arm_cp.6_0                             0x08001958   Number         4  uart_dbg.o(.text.SetPrint)
+    __arm_cp.6_2                             0x0800195c   Number         4  uart_dbg.o(.text.SetPrint)
+    __arm_cp.6_3                             0x08001960   Number         4  uart_dbg.o(.text.SetPrint)
+    __arm_cp.6_4                             0x08001964   Number         4  uart_dbg.o(.text.SetPrint)
+    __arm_cp.6_5                             0x08001968   Number         4  uart_dbg.o(.text.SetPrint)
+    [Anonymous Symbol]                       0x0800196c   Section        0  uart_dbg.o(.text.ShowDevConfig)
+    __arm_cp.7_0                             0x08001990   Number         4  uart_dbg.o(.text.ShowDevConfig)
+    __arm_cp.7_2                             0x08001994   Number         4  uart_dbg.o(.text.ShowDevConfig)
+    __arm_cp.7_4                             0x08001998   Number         4  uart_dbg.o(.text.ShowDevConfig)
+    [Anonymous Symbol]                       0x0800199c   Section        0  uart_to_host.o(.text.SndLockData)
+    __arm_cp.11_0                            0x080019b0   Number         4  uart_to_host.o(.text.SndLockData)
+    __arm_cp.11_1                            0x080019b4   Number         4  uart_to_host.o(.text.SndLockData)
+    SysTick_Config                           0x080019b9   Thumb Code    64  systick.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x080019b8   Section        0  systick.o(.text.SysTick_Config)
+    __arm_cp.1_0                             0x080019f8   Number         4  systick.o(.text.SysTick_Config)
+    __arm_cp.1_1                             0x080019fc   Number         4  systick.o(.text.SysTick_Config)
+    __arm_cp.1_2                             0x08001a00   Number         4  systick.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x08001a04   Section        0  systick.o(.text.SysTick_Handler)
+    __arm_cp.3_0                             0x08001a10   Number         4  systick.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08001a14   Section        0  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_0                             0x08001a90   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_1                             0x08001a94   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_2                             0x08001a98   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_3                             0x08001a9c   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_4                             0x08001aa0   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_5                             0x08001aa4   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_6                             0x08001aa8   Number         4  system_gd32l23x.o(.text.SystemInit)
+    __arm_cp.0_7                             0x08001aac   Number         4  system_gd32l23x.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08001ab0   Section        0  uart_dbg.o(.text.TestSndHost)
+    [Anonymous Symbol]                       0x08001ac4   Section        0  uart_to_host.o(.text.TrySndMcuDataToHost)
+    __arm_cp.2_0                             0x08001afc   Number         4  uart_to_host.o(.text.TrySndMcuDataToHost)
+    __arm_cp.2_1                             0x08001b00   Number         4  uart_to_host.o(.text.TrySndMcuDataToHost)
+    [Anonymous Symbol]                       0x08001b04   Section        0  uart_to_host.o(.text.UART3_IRQHandler)
+    __arm_cp.1_0                             0x08001c0c   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
+    __arm_cp.1_2                             0x08001c10   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
+    __arm_cp.1_4                             0x08001c14   Number         4  uart_to_host.o(.text.UART3_IRQHandler)
+    [Anonymous Symbol]                       0x08001c18   Section        0  uart_dbg.o(.text.USART0_IRQHandler)
+    __arm_cp.1_1                             0x08001ca4   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
+    __arm_cp.1_2                             0x08001ca8   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
+    __arm_cp.1_3                             0x08001cac   Number         4  uart_dbg.o(.text.USART0_IRQHandler)
+    [Anonymous Symbol]                       0x08001cb0   Section        0  uart_dbg.o(.text.UartDbgInit)
+    __arm_cp.0_0                             0x08001d70   Number         4  uart_dbg.o(.text.UartDbgInit)
+    __arm_cp.0_1                             0x08001d74   Number         4  uart_dbg.o(.text.UartDbgInit)
+    __arm_cp.0_3                             0x08001d78   Number         4  uart_dbg.o(.text.UartDbgInit)
+    [Anonymous Symbol]                       0x08001d7c   Section        0  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_0                             0x08001e18   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_1                             0x08001e1c   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_2                             0x08001e20   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_3                             0x08001e24   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_4                             0x08001e28   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_5                             0x08001e2c   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_6                             0x08001e30   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __arm_cp.5_7                             0x08001e34   Number         4  pwr_manage.o(.text.WeakupRestore)
+    __NVIC_EnableIRQ                         0x08001e39   Thumb Code    48  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x08001e38   Section        0  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
+    __arm_cp.2_0                             0x08001e68   Number         4  gd32l23x_misc.o(.text.__NVIC_EnableIRQ)
+    __NVIC_SetPriority                       0x08001e6d   Thumb Code   124  gd32l23x_misc.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x08001e6c   Section        0  gd32l23x_misc.o(.text.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x08001ee9   Thumb Code   124  systick.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x08001ee8   Section        0  systick.o(.text.__NVIC_SetPriority)
+    __arm_cp.2_0                             0x08001f64   Number         4  systick.o(.text.__NVIC_SetPriority)
+    __arm_cp.2_1                             0x08001f68   Number         4  systick.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x08001f6c   Section        0  uart_dbg.o(.text.aToUShort)
+    [Anonymous Symbol]                       0x08001ffc   Section        0  option.o(.text.do_default)
+    [Anonymous Symbol]                       0x08002004   Section        0  gd32l23x_exti.o(.text.exti_flag_clear)
+    [Anonymous Symbol]                       0x08002014   Section        0  gd32l23x_exti.o(.text.exti_init)
+    __arm_cp.1_0                             0x080020e4   Number         4  gd32l23x_exti.o(.text.exti_init)
+    __arm_cp.1_1                             0x080020e8   Number         4  gd32l23x_exti.o(.text.exti_init)
+    __arm_cp.1_2                             0x080020ec   Number         4  gd32l23x_exti.o(.text.exti_init)
+    __arm_cp.1_3                             0x080020f0   Number         4  gd32l23x_exti.o(.text.exti_init)
+    [Anonymous Symbol]                       0x080020f4   Section        0  gd32l23x_exti.o(.text.exti_interrupt_flag_clear)
+    [Anonymous Symbol]                       0x08002104   Section        0  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
+    __arm_cp.10_0                            0x0800212c   Number         4  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
+    [Anonymous Symbol]                       0x08002130   Section        0  option.o(.text.fmc_erase_pages)
+    [Anonymous Symbol]                       0x08002154   Section        0  option.o(.text.fmc_erase_pages_check)
+    __arm_cp.1_1                             0x08002188   Number         4  option.o(.text.fmc_erase_pages_check)
+    __arm_cp.1_2                             0x0800218c   Number         4  option.o(.text.fmc_erase_pages_check)
+    [Anonymous Symbol]                       0x08002190   Section        0  gd32l23x_fmc.o(.text.fmc_flag_clear)
+    [Anonymous Symbol]                       0x080021a0   Section        0  gd32l23x_fmc.o(.text.fmc_lock)
+    [Anonymous Symbol]                       0x080021ac   Section        0  gd32l23x_fmc.o(.text.fmc_page_erase)
+    __arm_cp.12_1                            0x08002204   Number         4  gd32l23x_fmc.o(.text.fmc_page_erase)
+    [Anonymous Symbol]                       0x08002208   Section        0  option.o(.text.fmc_program)
+    [Anonymous Symbol]                       0x08002244   Section        0  option.o(.text.fmc_program_check)
+    __arm_cp.3_0                             0x08002284   Number         4  option.o(.text.fmc_program_check)
+    __arm_cp.3_1                             0x08002288   Number         4  option.o(.text.fmc_program_check)
+    __arm_cp.3_2                             0x0800228c   Number         4  option.o(.text.fmc_program_check)
+    __arm_cp.3_3                             0x08002290   Number         4  option.o(.text.fmc_program_check)
+    fmc_ready_wait                           0x08002295   Thumb Code    90  gd32l23x_fmc.o(.text.fmc_ready_wait)
+    [Anonymous Symbol]                       0x08002294   Section        0  gd32l23x_fmc.o(.text.fmc_ready_wait)
+    fmc_state_get                            0x080022f1   Thumb Code   124  gd32l23x_fmc.o(.text.fmc_state_get)
+    [Anonymous Symbol]                       0x080022f0   Section        0  gd32l23x_fmc.o(.text.fmc_state_get)
+    __arm_cp.34_0                            0x0800236c   Number         4  gd32l23x_fmc.o(.text.fmc_state_get)
+    [Anonymous Symbol]                       0x08002370   Section        0  gd32l23x_fmc.o(.text.fmc_unlock)
+    __arm_cp.0_1                             0x0800238c   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
+    __arm_cp.0_2                             0x08002390   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
+    __arm_cp.0_3                             0x08002394   Number         4  gd32l23x_fmc.o(.text.fmc_unlock)
+    [Anonymous Symbol]                       0x08002398   Section        0  gd32l23x_fmc.o(.text.fmc_word_program)
+    __arm_cp.15_0                            0x080023e8   Number         4  gd32l23x_fmc.o(.text.fmc_word_program)
+    [Anonymous Symbol]                       0x080023ec   Section        0  gd32l23x_gpio.o(.text.gpio_af_set)
+    [Anonymous Symbol]                       0x080024ac   Section        0  gd32l23x_gpio.o(.text.gpio_bit_reset)
+    [Anonymous Symbol]                       0x080024bc   Section        0  gd32l23x_gpio.o(.text.gpio_bit_set)
+    [Anonymous Symbol]                       0x080024cc   Section        0  gd32l23x_gpio.o(.text.gpio_input_bit_get)
+    [Anonymous Symbol]                       0x080024f6   Section        0  gd32l23x_gpio.o(.text.gpio_mode_set)
+    [Anonymous Symbol]                       0x08002584   Section        0  gd32l23x_gpio.o(.text.gpio_output_options_set)
+    [Anonymous Symbol]                       0x08002610   Section        0  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
+    __arm_cp.1_0                             0x08002650   Number         4  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
+    __arm_cp.1_1                             0x08002654   Number         4  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
+    [Anonymous Symbol]                       0x08002658   Section        0  gd32l23x_lpuart.o(.text.lpuart_data_receive)
+    __arm_cp.14_0                            0x08002664   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_receive)
+    [Anonymous Symbol]                       0x08002668   Section        0  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
+    __arm_cp.13_0                            0x0800267c   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
+    __arm_cp.13_1                            0x08002680   Number         4  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
+    [Anonymous Symbol]                       0x08002684   Section        0  gd32l23x_lpuart.o(.text.lpuart_deinit)
+    __arm_cp.0_0                             0x0800269c   Number         4  gd32l23x_lpuart.o(.text.lpuart_deinit)
+    [Anonymous Symbol]                       0x080026a0   Section        0  gd32l23x_lpuart.o(.text.lpuart_enable)
+    [Anonymous Symbol]                       0x080026ac   Section        0  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
+    __arm_cp.39_0                            0x080026cc   Number         4  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
+    [Anonymous Symbol]                       0x080026d0   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_disable)
+    [Anonymous Symbol]                       0x080026f4   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_enable)
+    [Anonymous Symbol]                       0x08002718   Section        0  gd32l23x_lpuart.o(.text.lpuart_interrupt_flag_get)
+    [Anonymous Symbol]                       0x08002778   Section        0  gd32l23x_lpuart.o(.text.lpuart_parity_config)
+    [Anonymous Symbol]                       0x0800279c   Section        0  gd32l23x_lpuart.o(.text.lpuart_receive_config)
+    [Anonymous Symbol]                       0x080027b8   Section        0  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
+    __arm_cp.4_1                             0x080027e0   Number         4  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
+    [Anonymous Symbol]                       0x080027e4   Section        0  gd32l23x_lpuart.o(.text.lpuart_transmit_config)
+    [Anonymous Symbol]                       0x08002800   Section        0  gd32l23x_lpuart.o(.text.lpuart_wakeup_enable)
+    [Anonymous Symbol]                       0x0800280c   Section        0  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
+    __arm_cp.37_1                            0x08002834   Number         4  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
+    [Anonymous Symbol]                       0x08002838   Section        0  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
+    __arm_cp.3_0                             0x0800285c   Number         4  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
+    __arm_cp.3_1                             0x08002860   Number         4  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
+    [Anonymous Symbol]                       0x08002864   Section        0  uart_dbg.o(.text.m_pow)
+    [Anonymous Symbol]                       0x0800288c   Section        0  uart_dbg.o(.text.m_printf)
+    [Anonymous Symbol]                       0x08002c54   Section        0  main.o(.text.main)
+    __arm_cp.2_0                             0x08002d2c   Number         4  main.o(.text.main)
+    __arm_cp.2_1                             0x08002d30   Number         4  main.o(.text.main)
+    __arm_cp.2_2                             0x08002d34   Number         4  main.o(.text.main)
+    __arm_cp.2_3                             0x08002d38   Number         4  main.o(.text.main)
+    __arm_cp.2_4                             0x08002d3c   Number         4  main.o(.text.main)
+    __arm_cp.2_5                             0x08002d40   Number         4  main.o(.text.main)
+    __arm_cp.2_6                             0x08002d44   Number         4  main.o(.text.main)
+    [Anonymous Symbol]                       0x08002d48   Section        0  gd32l23x_misc.o(.text.nvic_irq_enable)
+    [Anonymous Symbol]                       0x08002d74   Section        0  gd32l23x_misc.o(.text.nvic_vector_table_set)
+    __arm_cp.7_0                             0x08002d90   Number         4  gd32l23x_misc.o(.text.nvic_vector_table_set)
+    __arm_cp.7_1                             0x08002d94   Number         4  gd32l23x_misc.o(.text.nvic_vector_table_set)
+    [Anonymous Symbol]                       0x08002d98   Section        0  gd32l23x_pmu.o(.text.pmu_ldo_output_select)
+    [Anonymous Symbol]                       0x08002db4   Section        0  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
+    __arm_cp.10_0                            0x08002e24   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
+    __arm_cp.10_1                            0x08002e28   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
+    __arm_cp.10_2                            0x08002e2c   Number         4  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
+    [Anonymous Symbol]                       0x08002e30   Section        0  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_10                           0x08003244   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_11                           0x08003248   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_14                           0x08003254   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_15                           0x08003258   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_2                            0x080033f0   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_4                            0x080033f4   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_6                            0x080033f8   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    __arm_cp.40_7                            0x080033fc   Number         4  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    [Anonymous Symbol]                       0x08003400   Section        0  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
+    __arm_cp.20_0                            0x0800341c   Number         4  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
+    [Anonymous Symbol]                       0x08003420   Section        0  gd32l23x_rcu.o(.text.rcu_periph_clock_disable)
+    [Anonymous Symbol]                       0x08003444   Section        0  gd32l23x_rcu.o(.text.rcu_periph_clock_enable)
+    [Anonymous Symbol]                       0x08003468   Section        0  gd32l23x_rcu.o(.text.rcu_periph_reset_disable)
+    [Anonymous Symbol]                       0x0800348c   Section        0  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
+    __arm_cp.5_0                             0x080034b0   Number         4  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
+    [Anonymous Symbol]                       0x080034b4   Section        0  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    __arm_cp.1_0                             0x08003558   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    __arm_cp.1_1                             0x0800355c   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    __arm_cp.1_2                             0x08003560   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    __arm_cp.1_3                             0x08003564   Number         4  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    system_clock_16m_irc16m                  0x08003569   Thumb Code    52  system_gd32l23x.o(.text.system_clock_16m_irc16m)
+    [Anonymous Symbol]                       0x08003568   Section        0  system_gd32l23x.o(.text.system_clock_16m_irc16m)
+    __arm_cp.3_0                             0x0800359c   Number         4  system_gd32l23x.o(.text.system_clock_16m_irc16m)
+    system_clock_config                      0x080035a1   Thumb Code     8  system_gd32l23x.o(.text.system_clock_config)
+    [Anonymous Symbol]                       0x080035a0   Section        0  system_gd32l23x.o(.text.system_clock_config)
+    [Anonymous Symbol]                       0x080035a8   Section        0  systick.o(.text.systick_config)
+    __arm_cp.0_0                             0x080035d0   Number         4  systick.o(.text.systick_config)
+    [Anonymous Symbol]                       0x080035d4   Section        0  gd32l23x_usart.o(.text.usart_baudrate_set)
+    __arm_cp.1_4                             0x080036a8   Number         4  gd32l23x_usart.o(.text.usart_baudrate_set)
+    [Anonymous Symbol]                       0x080036ac   Section        0  gd32l23x_usart.o(.text.usart_data_receive)
+    [Anonymous Symbol]                       0x080036bc   Section        0  gd32l23x_usart.o(.text.usart_data_transmit)
+    __arm_cp.18_0                            0x080036d4   Number         4  gd32l23x_usart.o(.text.usart_data_transmit)
+    [Anonymous Symbol]                       0x080036d8   Section        0  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_0                             0x08003750   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_1                             0x08003754   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_2                             0x08003758   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_3                             0x0800375c   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_4                             0x08003760   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_5                             0x08003764   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_6                             0x08003768   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    __arm_cp.0_7                             0x0800376c   Number         4  gd32l23x_usart.o(.text.usart_deinit)
+    [Anonymous Symbol]                       0x08003770   Section        0  gd32l23x_usart.o(.text.usart_enable)
+    [Anonymous Symbol]                       0x08003782   Section        0  gd32l23x_usart.o(.text.usart_interrupt_disable)
+    [Anonymous Symbol]                       0x080037a4   Section        0  gd32l23x_usart.o(.text.usart_interrupt_enable)
+    [Anonymous Symbol]                       0x080037c6   Section        0  gd32l23x_usart.o(.text.usart_interrupt_flag_get)
+    [Anonymous Symbol]                       0x08003828   Section        0  gd32l23x_usart.o(.text.usart_parity_config)
+    [Anonymous Symbol]                       0x08003852   Section        0  gd32l23x_usart.o(.text.usart_receive_config)
+    [Anonymous Symbol]                       0x08003870   Section        0  gd32l23x_usart.o(.text.usart_stop_bit_set)
+    [Anonymous Symbol]                       0x0800389a   Section        0  gd32l23x_usart.o(.text.usart_transmit_config)
+    [Anonymous Symbol]                       0x080038b8   Section        0  gd32l23x_usart.o(.text.usart_word_length_set)
+    i.__scatterload_copy                     0x080038e2   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080038f0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080038f2   Section       14  handlers.o(i.__scatterload_zeroinit)
+    [Anonymous Symbol]                       0x080039c8   Section        0  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080039e4   Section        0  uart_dbg.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003a0f   Section        0  gpio.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003a57   Section        0  option.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003aae   Section        0  pwr_manage.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003b2c   Section        0  uart_to_host.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003bd2   Section        0  uart_to_lock.o(.rodata.str1.1)
     STACK                                    0x200021b8   Section     1024  startup_gd32l23x.o(STACK)
 
     Global Symbols
@@ -3536,130 +3533,130 @@ Image Symbol Table
     CheckTKeyBL                              0x080002d9   Thumb Code    28  main.o(.text.CheckTKeyBL)
     DbgUartService                           0x080002f5   Thumb Code   304  uart_dbg.o(.text.DbgUartService)
     EXTI10_15_IRQHandler                     0x08000425   Thumb Code   124  gpio.o(.text.EXTI10_15_IRQHandler)
-    EXTI1_IRQHandler                         0x080004a5   Thumb Code    36  gpio.o(.text.EXTI1_IRQHandler)
-    EXTI5_9_IRQHandler                       0x080004cd   Thumb Code    88  gpio.o(.text.EXTI5_9_IRQHandler)
-    GpioInit                                 0x0800052d   Thumb Code   276  gpio.o(.text.GpioInit)
-    HandleCmd                                0x0800064d   Thumb Code    96  uart_dbg.o(.text.HandleCmd)
-    HandleHostCmd                            0x080006b9   Thumb Code   148  uart_to_host.o(.text.HandleHostCmd)
-    HostCmdGetVer                            0x08000761   Thumb Code    48  uart_to_host.o(.text.HostCmdGetVer)
-    HostCmdIrCut                             0x08000795   Thumb Code    72  uart_to_host.o(.text.HostCmdIrCut)
-    HostCmdPwrOff                            0x080007e5   Thumb Code    56  uart_to_host.o(.text.HostCmdPwrOff)
-    HostFeedDog                              0x08000821   Thumb Code    72  uart_to_host.o(.text.HostFeedDog)
-    HostPwrDownSetPin                        0x08000871   Thumb Code    36  pwr_manage.o(.text.HostPwrDownSetPin)
-    HostPwrUpSetPin                          0x0800089d   Thumb Code   160  pwr_manage.o(.text.HostPwrUpSetPin)
-    HostStartUpEnOut                         0x08000941   Thumb Code   120  pwr_manage.o(.text.HostStartUpEnOut)
-    InitHostUart                             0x080009bd   Thumb Code   140  uart_to_host.o(.text.InitHostUart)
-    InitLockUart                             0x08000a55   Thumb Code   208  uart_to_lock.o(.text.InitLockUart)
-    InitPowerManage                          0x08000b29   Thumb Code   120  pwr_manage.o(.text.InitPowerManage)
-    IrCutService                             0x08000bad   Thumb Code   268  gpio.o(.text.IrCutService)
-    LPUART_IRQHandler                        0x08000cd5   Thumb Code   196  uart_to_lock.o(.text.LPUART_IRQHandler)
-    LoadDevConfig                            0x08000dad   Thumb Code    72  option.o(.text.LoadDevConfig)
-    LockReqSndHostData                       0x08000e01   Thumb Code    68  uart_to_lock.o(.text.LockReqSndHostData)
-    ManagePower                              0x08000e51   Thumb Code   352  pwr_manage.o(.text.ManagePower)
-    PmuCmd                                   0x08000fc1   Thumb Code    96  uart_dbg.o(.text.PmuCmd)
-    PointNextRcv                             0x08001029   Thumb Code    36  uart_to_host.o(.text.PointNextRcv)
-    PrepareToSleep                           0x08001051   Thumb Code   100  pwr_manage.o(.text.PrepareToSleep)
-    PrintCmdChar                             0x080010cd   Thumb Code    60  uart_dbg.o(.text.PrintCmdChar)
-    PrintRcvHostData                         0x08001111   Thumb Code   108  uart_to_host.o(.text.PrintRcvHostData)
-    PrintRcvLockData                         0x08001189   Thumb Code   100  uart_to_lock.o(.text.PrintRcvLockData)
-    RcvHostUartByte                          0x080011f9   Thumb Code   856  uart_to_host.o(.text.RcvHostUartByte)
-    RcvHostUartService                       0x08001569   Thumb Code    44  uart_to_host.o(.text.RcvHostUartService)
-    RcvLockUartByte                          0x08001599   Thumb Code   232  uart_to_lock.o(.text.RcvLockUartByte)
-    RcvLockUartService                       0x08001689   Thumb Code   136  uart_to_lock.o(.text.RcvLockUartService)
-    ReqDbgSndChar                            0x08001719   Thumb Code    84  uart_dbg.o(.text.ReqDbgSndChar)
-    ReqSndHostPacket                         0x08001771   Thumb Code   134  uart_to_host.o(.text.ReqSndHostPacket)
-    ReqSndHostUart                           0x080017f9   Thumb Code    80  uart_to_host.o(.text.ReqSndHostUart)
-    SaveDevConfig                            0x08001851   Thumb Code    20  option.o(.text.SaveDevConfig)
-    SetPinForReducePwr                       0x08001865   Thumb Code    80  pwr_manage.o(.text.SetPinForReducePwr)
-    SetPrint                                 0x080018dd   Thumb Code   132  uart_dbg.o(.text.SetPrint)
-    ShowDevConfig                            0x08001975   Thumb Code    36  uart_dbg.o(.text.ShowDevConfig)
-    SndLockData                              0x080019a5   Thumb Code    20  uart_to_host.o(.text.SndLockData)
-    SysTick_Handler                          0x08001a0d   Thumb Code    12  systick.o(.text.SysTick_Handler)
-    SystemInit                               0x08001a1d   Thumb Code   124  system_gd32l23x.o(.text.SystemInit)
-    TestSndHost                              0x08001ab9   Thumb Code    20  uart_dbg.o(.text.TestSndHost)
-    TrySndMcuDataToHost                      0x08001acd   Thumb Code    56  uart_to_host.o(.text.TrySndMcuDataToHost)
-    UART3_IRQHandler                         0x08001b0d   Thumb Code   264  uart_to_host.o(.text.UART3_IRQHandler)
-    USART0_IRQHandler                        0x08001c21   Thumb Code   140  uart_dbg.o(.text.USART0_IRQHandler)
-    UartDbgInit                              0x08001cb9   Thumb Code   192  uart_dbg.o(.text.UartDbgInit)
-    WeakupRestore                            0x08001d85   Thumb Code   156  pwr_manage.o(.text.WeakupRestore)
-    aToUShort                                0x08001f75   Thumb Code   144  uart_dbg.o(.text.aToUShort)
-    do_default                               0x08002005   Thumb Code     8  option.o(.text.do_default)
-    exti_flag_clear                          0x0800200d   Thumb Code    16  gd32l23x_exti.o(.text.exti_flag_clear)
-    exti_init                                0x0800201d   Thumb Code   208  gd32l23x_exti.o(.text.exti_init)
-    exti_interrupt_flag_clear                0x080020fd   Thumb Code    16  gd32l23x_exti.o(.text.exti_interrupt_flag_clear)
-    exti_interrupt_flag_get                  0x0800210d   Thumb Code    40  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
-    fmc_erase_pages                          0x08002139   Thumb Code    36  option.o(.text.fmc_erase_pages)
-    fmc_erase_pages_check                    0x0800215d   Thumb Code    52  option.o(.text.fmc_erase_pages_check)
-    fmc_flag_clear                           0x08002199   Thumb Code    16  gd32l23x_fmc.o(.text.fmc_flag_clear)
-    fmc_lock                                 0x080021a9   Thumb Code    12  gd32l23x_fmc.o(.text.fmc_lock)
-    fmc_page_erase                           0x080021b5   Thumb Code    88  gd32l23x_fmc.o(.text.fmc_page_erase)
-    fmc_program                              0x08002211   Thumb Code    60  option.o(.text.fmc_program)
-    fmc_program_check                        0x0800224d   Thumb Code    64  option.o(.text.fmc_program_check)
-    fmc_unlock                               0x08002379   Thumb Code    28  gd32l23x_fmc.o(.text.fmc_unlock)
-    fmc_word_program                         0x080023a1   Thumb Code    80  gd32l23x_fmc.o(.text.fmc_word_program)
-    gpio_af_set                              0x080023f5   Thumb Code   192  gd32l23x_gpio.o(.text.gpio_af_set)
-    gpio_bit_reset                           0x080024b5   Thumb Code    16  gd32l23x_gpio.o(.text.gpio_bit_reset)
-    gpio_bit_set                             0x080024c5   Thumb Code    16  gd32l23x_gpio.o(.text.gpio_bit_set)
-    gpio_input_bit_get                       0x080024d5   Thumb Code    42  gd32l23x_gpio.o(.text.gpio_input_bit_get)
-    gpio_mode_set                            0x080024ff   Thumb Code   142  gd32l23x_gpio.o(.text.gpio_mode_set)
-    gpio_output_options_set                  0x0800258d   Thumb Code   138  gd32l23x_gpio.o(.text.gpio_output_options_set)
-    lpuart_baudrate_set                      0x08002619   Thumb Code    64  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
-    lpuart_data_receive                      0x08002661   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_data_receive)
-    lpuart_data_transmit                     0x08002671   Thumb Code    20  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
-    lpuart_deinit                            0x0800268d   Thumb Code    24  gd32l23x_lpuart.o(.text.lpuart_deinit)
-    lpuart_enable                            0x080026a9   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_enable)
-    lpuart_flag_clear                        0x080026b5   Thumb Code    32  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
-    lpuart_interrupt_disable                 0x080026d9   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_interrupt_disable)
-    lpuart_interrupt_enable                  0x080026fd   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_interrupt_enable)
-    lpuart_interrupt_flag_get                0x08002721   Thumb Code    96  gd32l23x_lpuart.o(.text.lpuart_interrupt_flag_get)
-    lpuart_parity_config                     0x08002781   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_parity_config)
-    lpuart_receive_config                    0x080027a5   Thumb Code    28  gd32l23x_lpuart.o(.text.lpuart_receive_config)
-    lpuart_stop_bit_set                      0x080027c1   Thumb Code    40  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
-    lpuart_transmit_config                   0x080027ed   Thumb Code    28  gd32l23x_lpuart.o(.text.lpuart_transmit_config)
-    lpuart_wakeup_enable                     0x08002809   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_wakeup_enable)
-    lpuart_wakeup_mode_config                0x08002815   Thumb Code    40  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
-    lpuart_word_length_set                   0x08002841   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
-    m_pow                                    0x0800286d   Thumb Code    38  uart_dbg.o(.text.m_pow)
-    m_printf                                 0x08002895   Thumb Code   966  uart_dbg.o(.text.m_printf)
-    main                                     0x08002c5d   Thumb Code   216  main.o(.text.main)
-    nvic_irq_enable                          0x08002d51   Thumb Code    44  gd32l23x_misc.o(.text.nvic_irq_enable)
-    nvic_vector_table_set                    0x08002d7d   Thumb Code    28  gd32l23x_misc.o(.text.nvic_vector_table_set)
-    pmu_ldo_output_select                    0x08002da1   Thumb Code    28  gd32l23x_pmu.o(.text.pmu_ldo_output_select)
-    pmu_to_deepsleepmode                     0x08002dbd   Thumb Code   112  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
-    rcu_clock_freq_get                       0x08002e39   Thumb Code  1472  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
-    rcu_lpuart_clock_config                  0x08003409   Thumb Code    28  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
-    rcu_periph_clock_disable                 0x08003429   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_clock_disable)
-    rcu_periph_clock_enable                  0x0800344d   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_clock_enable)
-    rcu_periph_reset_disable                 0x08003471   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_reset_disable)
-    rcu_periph_reset_enable                  0x08003495   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
-    syscfg_exti_line_config                  0x080034bd   Thumb Code   164  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
-    systick_config                           0x080035b1   Thumb Code    40  systick.o(.text.systick_config)
-    usart_baudrate_set                       0x080035dd   Thumb Code   212  gd32l23x_usart.o(.text.usart_baudrate_set)
-    usart_data_receive                       0x080036b5   Thumb Code    16  gd32l23x_usart.o(.text.usart_data_receive)
-    usart_data_transmit                      0x080036c5   Thumb Code    24  gd32l23x_usart.o(.text.usart_data_transmit)
-    usart_deinit                             0x080036e1   Thumb Code   120  gd32l23x_usart.o(.text.usart_deinit)
-    usart_enable                             0x08003779   Thumb Code    18  gd32l23x_usart.o(.text.usart_enable)
-    usart_interrupt_disable                  0x0800378b   Thumb Code    34  gd32l23x_usart.o(.text.usart_interrupt_disable)
-    usart_interrupt_enable                   0x080037ad   Thumb Code    34  gd32l23x_usart.o(.text.usart_interrupt_enable)
-    usart_interrupt_flag_get                 0x080037cf   Thumb Code    98  gd32l23x_usart.o(.text.usart_interrupt_flag_get)
-    usart_parity_config                      0x08003831   Thumb Code    42  gd32l23x_usart.o(.text.usart_parity_config)
-    usart_receive_config                     0x0800385b   Thumb Code    30  gd32l23x_usart.o(.text.usart_receive_config)
-    usart_stop_bit_set                       0x08003879   Thumb Code    42  gd32l23x_usart.o(.text.usart_stop_bit_set)
-    usart_transmit_config                    0x080038a3   Thumb Code    30  gd32l23x_usart.o(.text.usart_transmit_config)
-    usart_word_length_set                    0x080038c1   Thumb Code    42  gd32l23x_usart.o(.text.usart_word_length_set)
-    __scatterload_copy                       0x080038eb   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080038f9   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080038fb   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    DbgUartCmds                              0x08003908   Data          60  uart_dbg.o(.rodata.DbgUartCmds)
-    PmuCmdDesc                               0x08003944   Data          22  uart_dbg.o(.rodata.PmuCmdDesc)
-    PrintCmdDesc                             0x0800395a   Data          11  uart_dbg.o(.rodata.PrintCmdDesc)
-    SetPrintDesc                             0x08003965   Data          25  uart_dbg.o(.rodata.SetPrintDesc)
-    ShowDevCfgDesc                           0x0800397e   Data          14  uart_dbg.o(.rodata.ShowDevCfgDesc)
-    TestSndHostDesc                          0x0800398c   Data          20  uart_dbg.o(.rodata.TestSndHostDesc)
-    U1ByteCmds                               0x080039a0   Data          32  uart_to_host.o(.rodata.U1ByteCmds)
-    commandParaErr                           0x080039c0   Data          16  uart_dbg.o(.rodata.commandParaErr)
-    Region$$Table$$Base                      0x08003c14   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003c34   Number         0  anon$$obj.o(Region$$Table)
+    EXTI1_IRQHandler                         0x080004a5   Thumb Code    32  gpio.o(.text.EXTI1_IRQHandler)
+    EXTI5_9_IRQHandler                       0x080004c5   Thumb Code    88  gpio.o(.text.EXTI5_9_IRQHandler)
+    GpioInit                                 0x08000525   Thumb Code   276  gpio.o(.text.GpioInit)
+    HandleCmd                                0x08000645   Thumb Code    96  uart_dbg.o(.text.HandleCmd)
+    HandleHostCmd                            0x080006b1   Thumb Code   148  uart_to_host.o(.text.HandleHostCmd)
+    HostCmdGetVer                            0x08000759   Thumb Code    48  uart_to_host.o(.text.HostCmdGetVer)
+    HostCmdIrCut                             0x0800078d   Thumb Code    72  uart_to_host.o(.text.HostCmdIrCut)
+    HostCmdPwrOff                            0x080007dd   Thumb Code    56  uart_to_host.o(.text.HostCmdPwrOff)
+    HostFeedDog                              0x08000819   Thumb Code    72  uart_to_host.o(.text.HostFeedDog)
+    HostPwrDownSetPin                        0x08000869   Thumb Code    36  pwr_manage.o(.text.HostPwrDownSetPin)
+    HostPwrUpSetPin                          0x08000895   Thumb Code   160  pwr_manage.o(.text.HostPwrUpSetPin)
+    HostStartUpEnOut                         0x08000939   Thumb Code   120  pwr_manage.o(.text.HostStartUpEnOut)
+    InitHostUart                             0x080009b5   Thumb Code   140  uart_to_host.o(.text.InitHostUart)
+    InitLockUart                             0x08000a4d   Thumb Code   208  uart_to_lock.o(.text.InitLockUart)
+    InitPowerManage                          0x08000b21   Thumb Code   120  pwr_manage.o(.text.InitPowerManage)
+    IrCutService                             0x08000ba5   Thumb Code   268  gpio.o(.text.IrCutService)
+    LPUART_IRQHandler                        0x08000ccd   Thumb Code   196  uart_to_lock.o(.text.LPUART_IRQHandler)
+    LoadDevConfig                            0x08000da5   Thumb Code    72  option.o(.text.LoadDevConfig)
+    LockReqSndHostData                       0x08000df9   Thumb Code    68  uart_to_lock.o(.text.LockReqSndHostData)
+    ManagePower                              0x08000e49   Thumb Code   352  pwr_manage.o(.text.ManagePower)
+    PmuCmd                                   0x08000fb9   Thumb Code    96  uart_dbg.o(.text.PmuCmd)
+    PointNextRcv                             0x08001021   Thumb Code    36  uart_to_host.o(.text.PointNextRcv)
+    PrepareToSleep                           0x08001049   Thumb Code   100  pwr_manage.o(.text.PrepareToSleep)
+    PrintCmdChar                             0x080010c5   Thumb Code    60  uart_dbg.o(.text.PrintCmdChar)
+    PrintRcvHostData                         0x08001109   Thumb Code   108  uart_to_host.o(.text.PrintRcvHostData)
+    PrintRcvLockData                         0x08001181   Thumb Code   100  uart_to_lock.o(.text.PrintRcvLockData)
+    RcvHostUartByte                          0x080011f1   Thumb Code   856  uart_to_host.o(.text.RcvHostUartByte)
+    RcvHostUartService                       0x08001561   Thumb Code    44  uart_to_host.o(.text.RcvHostUartService)
+    RcvLockUartByte                          0x08001591   Thumb Code   232  uart_to_lock.o(.text.RcvLockUartByte)
+    RcvLockUartService                       0x08001681   Thumb Code   136  uart_to_lock.o(.text.RcvLockUartService)
+    ReqDbgSndChar                            0x08001711   Thumb Code    84  uart_dbg.o(.text.ReqDbgSndChar)
+    ReqSndHostPacket                         0x08001769   Thumb Code   134  uart_to_host.o(.text.ReqSndHostPacket)
+    ReqSndHostUart                           0x080017f1   Thumb Code    80  uart_to_host.o(.text.ReqSndHostUart)
+    SaveDevConfig                            0x08001849   Thumb Code    20  option.o(.text.SaveDevConfig)
+    SetPinForReducePwr                       0x0800185d   Thumb Code    80  pwr_manage.o(.text.SetPinForReducePwr)
+    SetPrint                                 0x080018d5   Thumb Code   132  uart_dbg.o(.text.SetPrint)
+    ShowDevConfig                            0x0800196d   Thumb Code    36  uart_dbg.o(.text.ShowDevConfig)
+    SndLockData                              0x0800199d   Thumb Code    20  uart_to_host.o(.text.SndLockData)
+    SysTick_Handler                          0x08001a05   Thumb Code    12  systick.o(.text.SysTick_Handler)
+    SystemInit                               0x08001a15   Thumb Code   124  system_gd32l23x.o(.text.SystemInit)
+    TestSndHost                              0x08001ab1   Thumb Code    20  uart_dbg.o(.text.TestSndHost)
+    TrySndMcuDataToHost                      0x08001ac5   Thumb Code    56  uart_to_host.o(.text.TrySndMcuDataToHost)
+    UART3_IRQHandler                         0x08001b05   Thumb Code   264  uart_to_host.o(.text.UART3_IRQHandler)
+    USART0_IRQHandler                        0x08001c19   Thumb Code   140  uart_dbg.o(.text.USART0_IRQHandler)
+    UartDbgInit                              0x08001cb1   Thumb Code   192  uart_dbg.o(.text.UartDbgInit)
+    WeakupRestore                            0x08001d7d   Thumb Code   156  pwr_manage.o(.text.WeakupRestore)
+    aToUShort                                0x08001f6d   Thumb Code   144  uart_dbg.o(.text.aToUShort)
+    do_default                               0x08001ffd   Thumb Code     8  option.o(.text.do_default)
+    exti_flag_clear                          0x08002005   Thumb Code    16  gd32l23x_exti.o(.text.exti_flag_clear)
+    exti_init                                0x08002015   Thumb Code   208  gd32l23x_exti.o(.text.exti_init)
+    exti_interrupt_flag_clear                0x080020f5   Thumb Code    16  gd32l23x_exti.o(.text.exti_interrupt_flag_clear)
+    exti_interrupt_flag_get                  0x08002105   Thumb Code    40  gd32l23x_exti.o(.text.exti_interrupt_flag_get)
+    fmc_erase_pages                          0x08002131   Thumb Code    36  option.o(.text.fmc_erase_pages)
+    fmc_erase_pages_check                    0x08002155   Thumb Code    52  option.o(.text.fmc_erase_pages_check)
+    fmc_flag_clear                           0x08002191   Thumb Code    16  gd32l23x_fmc.o(.text.fmc_flag_clear)
+    fmc_lock                                 0x080021a1   Thumb Code    12  gd32l23x_fmc.o(.text.fmc_lock)
+    fmc_page_erase                           0x080021ad   Thumb Code    88  gd32l23x_fmc.o(.text.fmc_page_erase)
+    fmc_program                              0x08002209   Thumb Code    60  option.o(.text.fmc_program)
+    fmc_program_check                        0x08002245   Thumb Code    64  option.o(.text.fmc_program_check)
+    fmc_unlock                               0x08002371   Thumb Code    28  gd32l23x_fmc.o(.text.fmc_unlock)
+    fmc_word_program                         0x08002399   Thumb Code    80  gd32l23x_fmc.o(.text.fmc_word_program)
+    gpio_af_set                              0x080023ed   Thumb Code   192  gd32l23x_gpio.o(.text.gpio_af_set)
+    gpio_bit_reset                           0x080024ad   Thumb Code    16  gd32l23x_gpio.o(.text.gpio_bit_reset)
+    gpio_bit_set                             0x080024bd   Thumb Code    16  gd32l23x_gpio.o(.text.gpio_bit_set)
+    gpio_input_bit_get                       0x080024cd   Thumb Code    42  gd32l23x_gpio.o(.text.gpio_input_bit_get)
+    gpio_mode_set                            0x080024f7   Thumb Code   142  gd32l23x_gpio.o(.text.gpio_mode_set)
+    gpio_output_options_set                  0x08002585   Thumb Code   138  gd32l23x_gpio.o(.text.gpio_output_options_set)
+    lpuart_baudrate_set                      0x08002611   Thumb Code    64  gd32l23x_lpuart.o(.text.lpuart_baudrate_set)
+    lpuart_data_receive                      0x08002659   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_data_receive)
+    lpuart_data_transmit                     0x08002669   Thumb Code    20  gd32l23x_lpuart.o(.text.lpuart_data_transmit)
+    lpuart_deinit                            0x08002685   Thumb Code    24  gd32l23x_lpuart.o(.text.lpuart_deinit)
+    lpuart_enable                            0x080026a1   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_enable)
+    lpuart_flag_clear                        0x080026ad   Thumb Code    32  gd32l23x_lpuart.o(.text.lpuart_flag_clear)
+    lpuart_interrupt_disable                 0x080026d1   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_interrupt_disable)
+    lpuart_interrupt_enable                  0x080026f5   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_interrupt_enable)
+    lpuart_interrupt_flag_get                0x08002719   Thumb Code    96  gd32l23x_lpuart.o(.text.lpuart_interrupt_flag_get)
+    lpuart_parity_config                     0x08002779   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_parity_config)
+    lpuart_receive_config                    0x0800279d   Thumb Code    28  gd32l23x_lpuart.o(.text.lpuart_receive_config)
+    lpuart_stop_bit_set                      0x080027b9   Thumb Code    40  gd32l23x_lpuart.o(.text.lpuart_stop_bit_set)
+    lpuart_transmit_config                   0x080027e5   Thumb Code    28  gd32l23x_lpuart.o(.text.lpuart_transmit_config)
+    lpuart_wakeup_enable                     0x08002801   Thumb Code    12  gd32l23x_lpuart.o(.text.lpuart_wakeup_enable)
+    lpuart_wakeup_mode_config                0x0800280d   Thumb Code    40  gd32l23x_lpuart.o(.text.lpuart_wakeup_mode_config)
+    lpuart_word_length_set                   0x08002839   Thumb Code    36  gd32l23x_lpuart.o(.text.lpuart_word_length_set)
+    m_pow                                    0x08002865   Thumb Code    38  uart_dbg.o(.text.m_pow)
+    m_printf                                 0x0800288d   Thumb Code   966  uart_dbg.o(.text.m_printf)
+    main                                     0x08002c55   Thumb Code   216  main.o(.text.main)
+    nvic_irq_enable                          0x08002d49   Thumb Code    44  gd32l23x_misc.o(.text.nvic_irq_enable)
+    nvic_vector_table_set                    0x08002d75   Thumb Code    28  gd32l23x_misc.o(.text.nvic_vector_table_set)
+    pmu_ldo_output_select                    0x08002d99   Thumb Code    28  gd32l23x_pmu.o(.text.pmu_ldo_output_select)
+    pmu_to_deepsleepmode                     0x08002db5   Thumb Code   112  gd32l23x_pmu.o(.text.pmu_to_deepsleepmode)
+    rcu_clock_freq_get                       0x08002e31   Thumb Code  1472  gd32l23x_rcu.o(.text.rcu_clock_freq_get)
+    rcu_lpuart_clock_config                  0x08003401   Thumb Code    28  gd32l23x_rcu.o(.text.rcu_lpuart_clock_config)
+    rcu_periph_clock_disable                 0x08003421   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_clock_disable)
+    rcu_periph_clock_enable                  0x08003445   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_clock_enable)
+    rcu_periph_reset_disable                 0x08003469   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_reset_disable)
+    rcu_periph_reset_enable                  0x0800348d   Thumb Code    36  gd32l23x_rcu.o(.text.rcu_periph_reset_enable)
+    syscfg_exti_line_config                  0x080034b5   Thumb Code   164  gd32l23x_syscfg.o(.text.syscfg_exti_line_config)
+    systick_config                           0x080035a9   Thumb Code    40  systick.o(.text.systick_config)
+    usart_baudrate_set                       0x080035d5   Thumb Code   212  gd32l23x_usart.o(.text.usart_baudrate_set)
+    usart_data_receive                       0x080036ad   Thumb Code    16  gd32l23x_usart.o(.text.usart_data_receive)
+    usart_data_transmit                      0x080036bd   Thumb Code    24  gd32l23x_usart.o(.text.usart_data_transmit)
+    usart_deinit                             0x080036d9   Thumb Code   120  gd32l23x_usart.o(.text.usart_deinit)
+    usart_enable                             0x08003771   Thumb Code    18  gd32l23x_usart.o(.text.usart_enable)
+    usart_interrupt_disable                  0x08003783   Thumb Code    34  gd32l23x_usart.o(.text.usart_interrupt_disable)
+    usart_interrupt_enable                   0x080037a5   Thumb Code    34  gd32l23x_usart.o(.text.usart_interrupt_enable)
+    usart_interrupt_flag_get                 0x080037c7   Thumb Code    98  gd32l23x_usart.o(.text.usart_interrupt_flag_get)
+    usart_parity_config                      0x08003829   Thumb Code    42  gd32l23x_usart.o(.text.usart_parity_config)
+    usart_receive_config                     0x08003853   Thumb Code    30  gd32l23x_usart.o(.text.usart_receive_config)
+    usart_stop_bit_set                       0x08003871   Thumb Code    42  gd32l23x_usart.o(.text.usart_stop_bit_set)
+    usart_transmit_config                    0x0800389b   Thumb Code    30  gd32l23x_usart.o(.text.usart_transmit_config)
+    usart_word_length_set                    0x080038b9   Thumb Code    42  gd32l23x_usart.o(.text.usart_word_length_set)
+    __scatterload_copy                       0x080038e3   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080038f1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080038f3   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    DbgUartCmds                              0x08003900   Data          60  uart_dbg.o(.rodata.DbgUartCmds)
+    PmuCmdDesc                               0x0800393c   Data          22  uart_dbg.o(.rodata.PmuCmdDesc)
+    PrintCmdDesc                             0x08003952   Data          11  uart_dbg.o(.rodata.PrintCmdDesc)
+    SetPrintDesc                             0x0800395d   Data          25  uart_dbg.o(.rodata.SetPrintDesc)
+    ShowDevCfgDesc                           0x08003976   Data          14  uart_dbg.o(.rodata.ShowDevCfgDesc)
+    TestSndHostDesc                          0x08003984   Data          20  uart_dbg.o(.rodata.TestSndHostDesc)
+    U1ByteCmds                               0x08003998   Data          32  uart_to_host.o(.rodata.U1ByteCmds)
+    commandParaErr                           0x080039b8   Data          16  uart_dbg.o(.rodata.commandParaErr)
+    Region$$Table$$Base                      0x08003c04   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003c24   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_gd32l23x.o(.data.SystemCoreClock)
     DbgUartInf                               0x20000008   Data         277  uart_dbg.o(.bss.DbgUartInf)
     DevConfig                                0x20000120   Data           4  main.o(.bss.DevConfig)
@@ -3680,9 +3677,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000155
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003c40, Max: 0x00020000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003c30, Max: 0x00020000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003c34, Max: 0x00020000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003c24, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3704,159 +3701,160 @@ Memory Map of the image
     0x080002d8   0x080002d8   0x0000001c   Code   RO            4    .text.CheckTKeyBL   main.o
     0x080002f4   0x080002f4   0x00000130   Code   RO         1839    .text.DbgUartService  uart_dbg.o
     0x08000424   0x08000424   0x00000080   Code   RO         1867    .text.EXTI10_15_IRQHandler  gpio.o
-    0x080004a4   0x080004a4   0x00000028   Code   RO         1863    .text.EXTI1_IRQHandler  gpio.o
-    0x080004cc   0x080004cc   0x00000060   Code   RO         1865    .text.EXTI5_9_IRQHandler  gpio.o
-    0x0800052c   0x0800052c   0x00000120   Code   RO         1861    .text.GpioInit      gpio.o
-    0x0800064c   0x0800064c   0x0000006c   Code   RO         1837    .text.HandleCmd     uart_dbg.o
-    0x080006b8   0x080006b8   0x000000a8   Code   RO         1946    .text.HandleHostCmd  uart_to_host.o
-    0x08000760   0x08000760   0x00000034   Code   RO         1944    .text.HostCmdGetVer  uart_to_host.o
-    0x08000794   0x08000794   0x00000050   Code   RO         1942    .text.HostCmdIrCut  uart_to_host.o
-    0x080007e4   0x080007e4   0x0000003c   Code   RO         1940    .text.HostCmdPwrOff  uart_to_host.o
-    0x08000820   0x08000820   0x00000050   Code   RO         1938    .text.HostFeedDog   uart_to_host.o
-    0x08000870   0x08000870   0x0000002c   Code   RO         1903    .text.HostPwrDownSetPin  pwr_manage.o
-    0x0800089c   0x0800089c   0x000000a4   Code   RO         1905    .text.HostPwrUpSetPin  pwr_manage.o
-    0x08000940   0x08000940   0x0000007c   Code   RO         1907    .text.HostStartUpEnOut  pwr_manage.o
-    0x080009bc   0x080009bc   0x00000098   Code   RO         1928    .text.InitHostUart  uart_to_host.o
-    0x08000a54   0x08000a54   0x000000d4   Code   RO         1971    .text.InitLockUart  uart_to_lock.o
-    0x08000b28   0x08000b28   0x00000084   Code   RO         1917    .text.InitPowerManage  pwr_manage.o
-    0x08000bac   0x08000bac   0x00000128   Code   RO         1859    .text.IrCutService  gpio.o
-    0x08000cd4   0x08000cd4   0x000000d8   Code   RO         1973    .text.LPUART_IRQHandler  uart_to_lock.o
-    0x08000dac   0x08000dac   0x00000054   Code   RO         1891    .text.LoadDevConfig  option.o
-    0x08000e00   0x08000e00   0x00000050   Code   RO         1977    .text.LockReqSndHostData  uart_to_lock.o
-    0x08000e50   0x08000e50   0x00000170   Code   RO         1915    .text.ManagePower   pwr_manage.o
-    0x08000fc0   0x08000fc0   0x00000068   Code   RO         1831    .text.PmuCmd        uart_dbg.o
-    0x08001028   0x08001028   0x00000028   Code   RO         1952    .text.PointNextRcv  uart_to_host.o
-    0x08001050   0x08001050   0x0000007c   Code   RO         1909    .text.PrepareToSleep  pwr_manage.o
-    0x080010cc   0x080010cc   0x00000044   Code   RO         1835    .text.PrintCmdChar  uart_dbg.o
-    0x08001110   0x08001110   0x00000078   Code   RO         1948    .text.PrintRcvHostData  uart_to_host.o
-    0x08001188   0x08001188   0x00000070   Code   RO         1975    .text.PrintRcvLockData  uart_to_lock.o
-    0x080011f8   0x080011f8   0x00000370   Code   RO         1954    .text.RcvHostUartByte  uart_to_host.o
-    0x08001568   0x08001568   0x00000030   Code   RO         1956    .text.RcvHostUartService  uart_to_host.o
-    0x08001598   0x08001598   0x000000f0   Code   RO         1979    .text.RcvLockUartByte  uart_to_lock.o
-    0x08001688   0x08001688   0x00000090   Code   RO         1981    .text.RcvLockUartService  uart_to_lock.o
-    0x08001718   0x08001718   0x00000058   Code   RO         1819    .text.ReqDbgSndChar  uart_dbg.o
-    0x08001770   0x08001770   0x00000086   Code   RO         1936    .text.ReqSndHostPacket  uart_to_host.o
-    0x080017f6   0x080017f6   0x00000002   PAD
-    0x080017f8   0x080017f8   0x00000058   Code   RO         1934    .text.ReqSndHostUart  uart_to_host.o
-    0x08001850   0x08001850   0x00000014   Code   RO         1887    .text.SaveDevConfig  option.o
-    0x08001864   0x08001864   0x00000078   Code   RO         1901    .text.SetPinForReducePwr  pwr_manage.o
-    0x080018dc   0x080018dc   0x00000098   Code   RO         1827    .text.SetPrint      uart_dbg.o
-    0x08001974   0x08001974   0x00000030   Code   RO         1829    .text.ShowDevConfig  uart_dbg.o
-    0x080019a4   0x080019a4   0x0000001c   Code   RO         1950    .text.SndLockData   uart_to_host.o
-    0x080019c0   0x080019c0   0x0000004c   Code   RO         1802    .text.SysTick_Config  systick.o
-    0x08001a0c   0x08001a0c   0x00000010   Code   RO         1806    .text.SysTick_Handler  systick.o
-    0x08001a1c   0x08001a1c   0x0000009c   Code   RO           20    .text.SystemInit    system_gd32l23x.o
-    0x08001ab8   0x08001ab8   0x00000014   Code   RO         1833    .text.TestSndHost   uart_dbg.o
-    0x08001acc   0x08001acc   0x00000040   Code   RO         1932    .text.TrySndMcuDataToHost  uart_to_host.o
-    0x08001b0c   0x08001b0c   0x00000114   Code   RO         1930    .text.UART3_IRQHandler  uart_to_host.o
-    0x08001c20   0x08001c20   0x00000098   Code   RO         1817    .text.USART0_IRQHandler  uart_dbg.o
-    0x08001cb8   0x08001cb8   0x000000cc   Code   RO         1815    .text.UartDbgInit   uart_dbg.o
-    0x08001d84   0x08001d84   0x000000bc   Code   RO         1911    .text.WeakupRestore  pwr_manage.o
-    0x08001e40   0x08001e40   0x00000034   Code   RO          271    .text.__NVIC_EnableIRQ  gd32l23x_misc.o
-    0x08001e74   0x08001e74   0x0000007c   Code   RO          269    .text.__NVIC_SetPriority  gd32l23x_misc.o
-    0x08001ef0   0x08001ef0   0x00000084   Code   RO         1804    .text.__NVIC_SetPriority  systick.o
-    0x08001f74   0x08001f74   0x00000090   Code   RO         1825    .text.aToUShort     uart_dbg.o
-    0x08002004   0x08002004   0x00000008   Code   RO         1889    .text.do_default    option.o
-    0x0800200c   0x0800200c   0x00000010   Code   RO          217    .text.exti_flag_clear  gd32l23x_exti.o
-    0x0800201c   0x0800201c   0x000000e0   Code   RO          201    .text.exti_init     gd32l23x_exti.o
-    0x080020fc   0x080020fc   0x00000010   Code   RO          221    .text.exti_interrupt_flag_clear  gd32l23x_exti.o
-    0x0800210c   0x0800210c   0x0000002c   Code   RO          219    .text.exti_interrupt_flag_get  gd32l23x_exti.o
-    0x08002138   0x08002138   0x00000024   Code   RO         1879    .text.fmc_erase_pages  option.o
-    0x0800215c   0x0800215c   0x0000003c   Code   RO         1881    .text.fmc_erase_pages_check  option.o
-    0x08002198   0x08002198   0x00000010   Code   RO         1042    .text.fmc_flag_clear  gd32l23x_fmc.o
-    0x080021a8   0x080021a8   0x0000000c   Code   RO          986    .text.fmc_lock      gd32l23x_fmc.o
-    0x080021b4   0x080021b4   0x0000005c   Code   RO         1008    .text.fmc_page_erase  gd32l23x_fmc.o
-    0x08002210   0x08002210   0x0000003c   Code   RO         1883    .text.fmc_program   option.o
-    0x0800224c   0x0800224c   0x00000050   Code   RO         1885    .text.fmc_program_check  option.o
-    0x0800229c   0x0800229c   0x0000005a   Code   RO         1010    .text.fmc_ready_wait  gd32l23x_fmc.o
-    0x080022f6   0x080022f6   0x00000002   PAD
-    0x080022f8   0x080022f8   0x00000080   Code   RO         1052    .text.fmc_state_get  gd32l23x_fmc.o
-    0x08002378   0x08002378   0x00000028   Code   RO          984    .text.fmc_unlock    gd32l23x_fmc.o
-    0x080023a0   0x080023a0   0x00000054   Code   RO         1014    .text.fmc_word_program  gd32l23x_fmc.o
-    0x080023f4   0x080023f4   0x000000c0   Code   RO          252    .text.gpio_af_set   gd32l23x_gpio.o
-    0x080024b4   0x080024b4   0x00000010   Code   RO          238    .text.gpio_bit_reset  gd32l23x_gpio.o
-    0x080024c4   0x080024c4   0x00000010   Code   RO          236    .text.gpio_bit_set  gd32l23x_gpio.o
-    0x080024d4   0x080024d4   0x0000002a   Code   RO          244    .text.gpio_input_bit_get  gd32l23x_gpio.o
-    0x080024fe   0x080024fe   0x0000008e   Code   RO          232    .text.gpio_mode_set  gd32l23x_gpio.o
-    0x0800258c   0x0800258c   0x0000008a   Code   RO          234    .text.gpio_output_options_set  gd32l23x_gpio.o
-    0x08002616   0x08002616   0x00000002   PAD
-    0x08002618   0x08002618   0x00000048   Code   RO         1196    .text.lpuart_baudrate_set  gd32l23x_lpuart.o
-    0x08002660   0x08002660   0x00000010   Code   RO         1222    .text.lpuart_data_receive  gd32l23x_lpuart.o
-    0x08002670   0x08002670   0x0000001c   Code   RO         1220    .text.lpuart_data_transmit  gd32l23x_lpuart.o
-    0x0800268c   0x0800268c   0x0000001c   Code   RO         1194    .text.lpuart_deinit  gd32l23x_lpuart.o
-    0x080026a8   0x080026a8   0x0000000c   Code   RO         1204    .text.lpuart_enable  gd32l23x_lpuart.o
-    0x080026b4   0x080026b4   0x00000024   Code   RO         1272    .text.lpuart_flag_clear  gd32l23x_lpuart.o
-    0x080026d8   0x080026d8   0x00000024   Code   RO         1276    .text.lpuart_interrupt_disable  gd32l23x_lpuart.o
-    0x080026fc   0x080026fc   0x00000024   Code   RO         1274    .text.lpuart_interrupt_enable  gd32l23x_lpuart.o
-    0x08002720   0x08002720   0x00000060   Code   RO         1278    .text.lpuart_interrupt_flag_get  gd32l23x_lpuart.o
-    0x08002780   0x08002780   0x00000024   Code   RO         1198    .text.lpuart_parity_config  gd32l23x_lpuart.o
-    0x080027a4   0x080027a4   0x0000001c   Code   RO         1210    .text.lpuart_receive_config  gd32l23x_lpuart.o
-    0x080027c0   0x080027c0   0x0000002c   Code   RO         1202    .text.lpuart_stop_bit_set  gd32l23x_lpuart.o
-    0x080027ec   0x080027ec   0x0000001c   Code   RO         1208    .text.lpuart_transmit_config  gd32l23x_lpuart.o
-    0x08002808   0x08002808   0x0000000c   Code   RO         1264    .text.lpuart_wakeup_enable  gd32l23x_lpuart.o
-    0x08002814   0x08002814   0x0000002c   Code   RO         1268    .text.lpuart_wakeup_mode_config  gd32l23x_lpuart.o
-    0x08002840   0x08002840   0x0000002c   Code   RO         1200    .text.lpuart_word_length_set  gd32l23x_lpuart.o
-    0x0800286c   0x0800286c   0x00000026   Code   RO         1821    .text.m_pow         uart_dbg.o
-    0x08002892   0x08002892   0x00000002   PAD
-    0x08002894   0x08002894   0x000003c6   Code   RO         1823    .text.m_printf      uart_dbg.o
-    0x08002c5a   0x08002c5a   0x00000002   PAD
-    0x08002c5c   0x08002c5c   0x000000f4   Code   RO            6    .text.main          main.o
-    0x08002d50   0x08002d50   0x0000002c   Code   RO          267    .text.nvic_irq_enable  gd32l23x_misc.o
-    0x08002d7c   0x08002d7c   0x00000024   Code   RO          281    .text.nvic_vector_table_set  gd32l23x_misc.o
-    0x08002da0   0x08002da0   0x0000001c   Code   RO         1295    .text.pmu_ldo_output_select  gd32l23x_pmu.o
-    0x08002dbc   0x08002dbc   0x0000007c   Code   RO         1309    .text.pmu_to_deepsleepmode  gd32l23x_pmu.o
-    0x08002e38   0x08002e38   0x000005d0   Code   RO          376    .text.rcu_clock_freq_get  gd32l23x_rcu.o
-    0x08003408   0x08003408   0x00000020   Code   RO          336    .text.rcu_lpuart_clock_config  gd32l23x_rcu.o
-    0x08003428   0x08003428   0x00000024   Code   RO          300    .text.rcu_periph_clock_disable  gd32l23x_rcu.o
-    0x0800344c   0x0800344c   0x00000024   Code   RO          298    .text.rcu_periph_clock_enable  gd32l23x_rcu.o
-    0x08003470   0x08003470   0x00000024   Code   RO          308    .text.rcu_periph_reset_disable  gd32l23x_rcu.o
-    0x08003494   0x08003494   0x00000028   Code   RO          306    .text.rcu_periph_reset_enable  gd32l23x_rcu.o
-    0x080034bc   0x080034bc   0x000000b4   Code   RO          399    .text.syscfg_exti_line_config  gd32l23x_syscfg.o
-    0x08003570   0x08003570   0x00000038   Code   RO           26    .text.system_clock_16m_irc16m  system_gd32l23x.o
-    0x080035a8   0x080035a8   0x00000008   Code   RO           22    .text.system_clock_config  system_gd32l23x.o
-    0x080035b0   0x080035b0   0x0000002c   Code   RO         1800    .text.systick_config  systick.o
-    0x080035dc   0x080035dc   0x000000d8   Code   RO          422    .text.usart_baudrate_set  gd32l23x_usart.o
-    0x080036b4   0x080036b4   0x00000010   Code   RO          458    .text.usart_data_receive  gd32l23x_usart.o
-    0x080036c4   0x080036c4   0x0000001c   Code   RO          456    .text.usart_data_transmit  gd32l23x_usart.o
-    0x080036e0   0x080036e0   0x00000098   Code   RO          420    .text.usart_deinit  gd32l23x_usart.o
-    0x08003778   0x08003778   0x00000012   Code   RO          430    .text.usart_enable  gd32l23x_usart.o
-    0x0800378a   0x0800378a   0x00000022   Code   RO          556    .text.usart_interrupt_disable  gd32l23x_usart.o
-    0x080037ac   0x080037ac   0x00000022   Code   RO          554    .text.usart_interrupt_enable  gd32l23x_usart.o
-    0x080037ce   0x080037ce   0x00000062   Code   RO          558    .text.usart_interrupt_flag_get  gd32l23x_usart.o
-    0x08003830   0x08003830   0x0000002a   Code   RO          424    .text.usart_parity_config  gd32l23x_usart.o
-    0x0800385a   0x0800385a   0x0000001e   Code   RO          436    .text.usart_receive_config  gd32l23x_usart.o
-    0x08003878   0x08003878   0x0000002a   Code   RO          428    .text.usart_stop_bit_set  gd32l23x_usart.o
-    0x080038a2   0x080038a2   0x0000001e   Code   RO          434    .text.usart_transmit_config  gd32l23x_usart.o
-    0x080038c0   0x080038c0   0x0000002a   Code   RO          426    .text.usart_word_length_set  gd32l23x_usart.o
-    0x080038ea   0x080038ea   0x0000000e   Code   RO         2018    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x080038f8   0x080038f8   0x00000002   Code   RO         2019    i.__scatterload_null  mc_p.l(handlers.o)
-    0x080038fa   0x080038fa   0x0000000e   Code   RO         2020    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x08003908   0x08003908   0x0000003c   Data   RO         1851    .rodata.DbgUartCmds  uart_dbg.o
-    0x08003944   0x08003944   0x00000016   Data   RO         1846    .rodata.PmuCmdDesc  uart_dbg.o
-    0x0800395a   0x0800395a   0x0000000b   Data   RO         1850    .rodata.PrintCmdDesc  uart_dbg.o
-    0x08003965   0x08003965   0x00000019   Data   RO         1843    .rodata.SetPrintDesc  uart_dbg.o
-    0x0800397e   0x0800397e   0x0000000e   Data   RO         1844    .rodata.ShowDevCfgDesc  uart_dbg.o
-    0x0800398c   0x0800398c   0x00000014   Data   RO         1847    .rodata.TestSndHostDesc  uart_dbg.o
-    0x080039a0   0x080039a0   0x00000020   Data   RO         1962    .rodata.U1ByteCmds  uart_to_host.o
-    0x080039c0   0x080039c0   0x00000010   Data   RO         1842    .rodata.commandParaErr  uart_dbg.o
-    0x080039d0   0x080039d0   0x0000001c   Data   RO            8    .rodata.str1.1      main.o
-    0x080039ec   0x080039ec   0x0000002b   Data   RO         1845    .rodata.str1.1      uart_dbg.o
-    0x08003a17   0x08003a17   0x00000052   Data   RO         1871    .rodata.str1.1      gpio.o
-    0x08003a69   0x08003a69   0x00000057   Data   RO         1893    .rodata.str1.1      option.o
-    0x08003ac0   0x08003ac0   0x0000007e   Data   RO         1920    .rodata.str1.1      pwr_manage.o
-    0x08003b3e   0x08003b3e   0x000000a6   Data   RO         1961    .rodata.str1.1      uart_to_host.o
-    0x08003be4   0x08003be4   0x00000030   Data   RO         1986    .rodata.str1.1      uart_to_lock.o
-    0x08003c14   0x08003c14   0x00000020   Data   RO         2017    Region$$Table       anon$$obj.o
+    0x080004a4   0x080004a4   0x00000020   Code   RO         1863    .text.EXTI1_IRQHandler  gpio.o
+    0x080004c4   0x080004c4   0x00000060   Code   RO         1865    .text.EXTI5_9_IRQHandler  gpio.o
+    0x08000524   0x08000524   0x00000120   Code   RO         1861    .text.GpioInit      gpio.o
+    0x08000644   0x08000644   0x0000006c   Code   RO         1837    .text.HandleCmd     uart_dbg.o
+    0x080006b0   0x080006b0   0x000000a8   Code   RO         1946    .text.HandleHostCmd  uart_to_host.o
+    0x08000758   0x08000758   0x00000034   Code   RO         1944    .text.HostCmdGetVer  uart_to_host.o
+    0x0800078c   0x0800078c   0x00000050   Code   RO         1942    .text.HostCmdIrCut  uart_to_host.o
+    0x080007dc   0x080007dc   0x0000003c   Code   RO         1940    .text.HostCmdPwrOff  uart_to_host.o
+    0x08000818   0x08000818   0x00000050   Code   RO         1938    .text.HostFeedDog   uart_to_host.o
+    0x08000868   0x08000868   0x0000002c   Code   RO         1903    .text.HostPwrDownSetPin  pwr_manage.o
+    0x08000894   0x08000894   0x000000a4   Code   RO         1905    .text.HostPwrUpSetPin  pwr_manage.o
+    0x08000938   0x08000938   0x0000007c   Code   RO         1907    .text.HostStartUpEnOut  pwr_manage.o
+    0x080009b4   0x080009b4   0x00000098   Code   RO         1928    .text.InitHostUart  uart_to_host.o
+    0x08000a4c   0x08000a4c   0x000000d4   Code   RO         1971    .text.InitLockUart  uart_to_lock.o
+    0x08000b20   0x08000b20   0x00000084   Code   RO         1917    .text.InitPowerManage  pwr_manage.o
+    0x08000ba4   0x08000ba4   0x00000128   Code   RO         1859    .text.IrCutService  gpio.o
+    0x08000ccc   0x08000ccc   0x000000d8   Code   RO         1973    .text.LPUART_IRQHandler  uart_to_lock.o
+    0x08000da4   0x08000da4   0x00000054   Code   RO         1891    .text.LoadDevConfig  option.o
+    0x08000df8   0x08000df8   0x00000050   Code   RO         1977    .text.LockReqSndHostData  uart_to_lock.o
+    0x08000e48   0x08000e48   0x00000170   Code   RO         1915    .text.ManagePower   pwr_manage.o
+    0x08000fb8   0x08000fb8   0x00000068   Code   RO         1831    .text.PmuCmd        uart_dbg.o
+    0x08001020   0x08001020   0x00000028   Code   RO         1952    .text.PointNextRcv  uart_to_host.o
+    0x08001048   0x08001048   0x0000007c   Code   RO         1909    .text.PrepareToSleep  pwr_manage.o
+    0x080010c4   0x080010c4   0x00000044   Code   RO         1835    .text.PrintCmdChar  uart_dbg.o
+    0x08001108   0x08001108   0x00000078   Code   RO         1948    .text.PrintRcvHostData  uart_to_host.o
+    0x08001180   0x08001180   0x00000070   Code   RO         1975    .text.PrintRcvLockData  uart_to_lock.o
+    0x080011f0   0x080011f0   0x00000370   Code   RO         1954    .text.RcvHostUartByte  uart_to_host.o
+    0x08001560   0x08001560   0x00000030   Code   RO         1956    .text.RcvHostUartService  uart_to_host.o
+    0x08001590   0x08001590   0x000000f0   Code   RO         1979    .text.RcvLockUartByte  uart_to_lock.o
+    0x08001680   0x08001680   0x00000090   Code   RO         1981    .text.RcvLockUartService  uart_to_lock.o
+    0x08001710   0x08001710   0x00000058   Code   RO         1819    .text.ReqDbgSndChar  uart_dbg.o
+    0x08001768   0x08001768   0x00000086   Code   RO         1936    .text.ReqSndHostPacket  uart_to_host.o
+    0x080017ee   0x080017ee   0x00000002   PAD
+    0x080017f0   0x080017f0   0x00000058   Code   RO         1934    .text.ReqSndHostUart  uart_to_host.o
+    0x08001848   0x08001848   0x00000014   Code   RO         1887    .text.SaveDevConfig  option.o
+    0x0800185c   0x0800185c   0x00000078   Code   RO         1901    .text.SetPinForReducePwr  pwr_manage.o
+    0x080018d4   0x080018d4   0x00000098   Code   RO         1827    .text.SetPrint      uart_dbg.o
+    0x0800196c   0x0800196c   0x00000030   Code   RO         1829    .text.ShowDevConfig  uart_dbg.o
+    0x0800199c   0x0800199c   0x0000001c   Code   RO         1950    .text.SndLockData   uart_to_host.o
+    0x080019b8   0x080019b8   0x0000004c   Code   RO         1802    .text.SysTick_Config  systick.o
+    0x08001a04   0x08001a04   0x00000010   Code   RO         1806    .text.SysTick_Handler  systick.o
+    0x08001a14   0x08001a14   0x0000009c   Code   RO           20    .text.SystemInit    system_gd32l23x.o
+    0x08001ab0   0x08001ab0   0x00000014   Code   RO         1833    .text.TestSndHost   uart_dbg.o
+    0x08001ac4   0x08001ac4   0x00000040   Code   RO         1932    .text.TrySndMcuDataToHost  uart_to_host.o
+    0x08001b04   0x08001b04   0x00000114   Code   RO         1930    .text.UART3_IRQHandler  uart_to_host.o
+    0x08001c18   0x08001c18   0x00000098   Code   RO         1817    .text.USART0_IRQHandler  uart_dbg.o
+    0x08001cb0   0x08001cb0   0x000000cc   Code   RO         1815    .text.UartDbgInit   uart_dbg.o
+    0x08001d7c   0x08001d7c   0x000000bc   Code   RO         1911    .text.WeakupRestore  pwr_manage.o
+    0x08001e38   0x08001e38   0x00000034   Code   RO          271    .text.__NVIC_EnableIRQ  gd32l23x_misc.o
+    0x08001e6c   0x08001e6c   0x0000007c   Code   RO          269    .text.__NVIC_SetPriority  gd32l23x_misc.o
+    0x08001ee8   0x08001ee8   0x00000084   Code   RO         1804    .text.__NVIC_SetPriority  systick.o
+    0x08001f6c   0x08001f6c   0x00000090   Code   RO         1825    .text.aToUShort     uart_dbg.o
+    0x08001ffc   0x08001ffc   0x00000008   Code   RO         1889    .text.do_default    option.o
+    0x08002004   0x08002004   0x00000010   Code   RO          217    .text.exti_flag_clear  gd32l23x_exti.o
+    0x08002014   0x08002014   0x000000e0   Code   RO          201    .text.exti_init     gd32l23x_exti.o
+    0x080020f4   0x080020f4   0x00000010   Code   RO          221    .text.exti_interrupt_flag_clear  gd32l23x_exti.o
+    0x08002104   0x08002104   0x0000002c   Code   RO          219    .text.exti_interrupt_flag_get  gd32l23x_exti.o
+    0x08002130   0x08002130   0x00000024   Code   RO         1879    .text.fmc_erase_pages  option.o
+    0x08002154   0x08002154   0x0000003c   Code   RO         1881    .text.fmc_erase_pages_check  option.o
+    0x08002190   0x08002190   0x00000010   Code   RO         1042    .text.fmc_flag_clear  gd32l23x_fmc.o
+    0x080021a0   0x080021a0   0x0000000c   Code   RO          986    .text.fmc_lock      gd32l23x_fmc.o
+    0x080021ac   0x080021ac   0x0000005c   Code   RO         1008    .text.fmc_page_erase  gd32l23x_fmc.o
+    0x08002208   0x08002208   0x0000003c   Code   RO         1883    .text.fmc_program   option.o
+    0x08002244   0x08002244   0x00000050   Code   RO         1885    .text.fmc_program_check  option.o
+    0x08002294   0x08002294   0x0000005a   Code   RO         1010    .text.fmc_ready_wait  gd32l23x_fmc.o
+    0x080022ee   0x080022ee   0x00000002   PAD
+    0x080022f0   0x080022f0   0x00000080   Code   RO         1052    .text.fmc_state_get  gd32l23x_fmc.o
+    0x08002370   0x08002370   0x00000028   Code   RO          984    .text.fmc_unlock    gd32l23x_fmc.o
+    0x08002398   0x08002398   0x00000054   Code   RO         1014    .text.fmc_word_program  gd32l23x_fmc.o
+    0x080023ec   0x080023ec   0x000000c0   Code   RO          252    .text.gpio_af_set   gd32l23x_gpio.o
+    0x080024ac   0x080024ac   0x00000010   Code   RO          238    .text.gpio_bit_reset  gd32l23x_gpio.o
+    0x080024bc   0x080024bc   0x00000010   Code   RO          236    .text.gpio_bit_set  gd32l23x_gpio.o
+    0x080024cc   0x080024cc   0x0000002a   Code   RO          244    .text.gpio_input_bit_get  gd32l23x_gpio.o
+    0x080024f6   0x080024f6   0x0000008e   Code   RO          232    .text.gpio_mode_set  gd32l23x_gpio.o
+    0x08002584   0x08002584   0x0000008a   Code   RO          234    .text.gpio_output_options_set  gd32l23x_gpio.o
+    0x0800260e   0x0800260e   0x00000002   PAD
+    0x08002610   0x08002610   0x00000048   Code   RO         1196    .text.lpuart_baudrate_set  gd32l23x_lpuart.o
+    0x08002658   0x08002658   0x00000010   Code   RO         1222    .text.lpuart_data_receive  gd32l23x_lpuart.o
+    0x08002668   0x08002668   0x0000001c   Code   RO         1220    .text.lpuart_data_transmit  gd32l23x_lpuart.o
+    0x08002684   0x08002684   0x0000001c   Code   RO         1194    .text.lpuart_deinit  gd32l23x_lpuart.o
+    0x080026a0   0x080026a0   0x0000000c   Code   RO         1204    .text.lpuart_enable  gd32l23x_lpuart.o
+    0x080026ac   0x080026ac   0x00000024   Code   RO         1272    .text.lpuart_flag_clear  gd32l23x_lpuart.o
+    0x080026d0   0x080026d0   0x00000024   Code   RO         1276    .text.lpuart_interrupt_disable  gd32l23x_lpuart.o
+    0x080026f4   0x080026f4   0x00000024   Code   RO         1274    .text.lpuart_interrupt_enable  gd32l23x_lpuart.o
+    0x08002718   0x08002718   0x00000060   Code   RO         1278    .text.lpuart_interrupt_flag_get  gd32l23x_lpuart.o
+    0x08002778   0x08002778   0x00000024   Code   RO         1198    .text.lpuart_parity_config  gd32l23x_lpuart.o
+    0x0800279c   0x0800279c   0x0000001c   Code   RO         1210    .text.lpuart_receive_config  gd32l23x_lpuart.o
+    0x080027b8   0x080027b8   0x0000002c   Code   RO         1202    .text.lpuart_stop_bit_set  gd32l23x_lpuart.o
+    0x080027e4   0x080027e4   0x0000001c   Code   RO         1208    .text.lpuart_transmit_config  gd32l23x_lpuart.o
+    0x08002800   0x08002800   0x0000000c   Code   RO         1264    .text.lpuart_wakeup_enable  gd32l23x_lpuart.o
+    0x0800280c   0x0800280c   0x0000002c   Code   RO         1268    .text.lpuart_wakeup_mode_config  gd32l23x_lpuart.o
+    0x08002838   0x08002838   0x0000002c   Code   RO         1200    .text.lpuart_word_length_set  gd32l23x_lpuart.o
+    0x08002864   0x08002864   0x00000026   Code   RO         1821    .text.m_pow         uart_dbg.o
+    0x0800288a   0x0800288a   0x00000002   PAD
+    0x0800288c   0x0800288c   0x000003c6   Code   RO         1823    .text.m_printf      uart_dbg.o
+    0x08002c52   0x08002c52   0x00000002   PAD
+    0x08002c54   0x08002c54   0x000000f4   Code   RO            6    .text.main          main.o
+    0x08002d48   0x08002d48   0x0000002c   Code   RO          267    .text.nvic_irq_enable  gd32l23x_misc.o
+    0x08002d74   0x08002d74   0x00000024   Code   RO          281    .text.nvic_vector_table_set  gd32l23x_misc.o
+    0x08002d98   0x08002d98   0x0000001c   Code   RO         1295    .text.pmu_ldo_output_select  gd32l23x_pmu.o
+    0x08002db4   0x08002db4   0x0000007c   Code   RO         1309    .text.pmu_to_deepsleepmode  gd32l23x_pmu.o
+    0x08002e30   0x08002e30   0x000005d0   Code   RO          376    .text.rcu_clock_freq_get  gd32l23x_rcu.o
+    0x08003400   0x08003400   0x00000020   Code   RO          336    .text.rcu_lpuart_clock_config  gd32l23x_rcu.o
+    0x08003420   0x08003420   0x00000024   Code   RO          300    .text.rcu_periph_clock_disable  gd32l23x_rcu.o
+    0x08003444   0x08003444   0x00000024   Code   RO          298    .text.rcu_periph_clock_enable  gd32l23x_rcu.o
+    0x08003468   0x08003468   0x00000024   Code   RO          308    .text.rcu_periph_reset_disable  gd32l23x_rcu.o
+    0x0800348c   0x0800348c   0x00000028   Code   RO          306    .text.rcu_periph_reset_enable  gd32l23x_rcu.o
+    0x080034b4   0x080034b4   0x000000b4   Code   RO          399    .text.syscfg_exti_line_config  gd32l23x_syscfg.o
+    0x08003568   0x08003568   0x00000038   Code   RO           26    .text.system_clock_16m_irc16m  system_gd32l23x.o
+    0x080035a0   0x080035a0   0x00000008   Code   RO           22    .text.system_clock_config  system_gd32l23x.o
+    0x080035a8   0x080035a8   0x0000002c   Code   RO         1800    .text.systick_config  systick.o
+    0x080035d4   0x080035d4   0x000000d8   Code   RO          422    .text.usart_baudrate_set  gd32l23x_usart.o
+    0x080036ac   0x080036ac   0x00000010   Code   RO          458    .text.usart_data_receive  gd32l23x_usart.o
+    0x080036bc   0x080036bc   0x0000001c   Code   RO          456    .text.usart_data_transmit  gd32l23x_usart.o
+    0x080036d8   0x080036d8   0x00000098   Code   RO          420    .text.usart_deinit  gd32l23x_usart.o
+    0x08003770   0x08003770   0x00000012   Code   RO          430    .text.usart_enable  gd32l23x_usart.o
+    0x08003782   0x08003782   0x00000022   Code   RO          556    .text.usart_interrupt_disable  gd32l23x_usart.o
+    0x080037a4   0x080037a4   0x00000022   Code   RO          554    .text.usart_interrupt_enable  gd32l23x_usart.o
+    0x080037c6   0x080037c6   0x00000062   Code   RO          558    .text.usart_interrupt_flag_get  gd32l23x_usart.o
+    0x08003828   0x08003828   0x0000002a   Code   RO          424    .text.usart_parity_config  gd32l23x_usart.o
+    0x08003852   0x08003852   0x0000001e   Code   RO          436    .text.usart_receive_config  gd32l23x_usart.o
+    0x08003870   0x08003870   0x0000002a   Code   RO          428    .text.usart_stop_bit_set  gd32l23x_usart.o
+    0x0800389a   0x0800389a   0x0000001e   Code   RO          434    .text.usart_transmit_config  gd32l23x_usart.o
+    0x080038b8   0x080038b8   0x0000002a   Code   RO          426    .text.usart_word_length_set  gd32l23x_usart.o
+    0x080038e2   0x080038e2   0x0000000e   Code   RO         2018    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x080038f0   0x080038f0   0x00000002   Code   RO         2019    i.__scatterload_null  mc_p.l(handlers.o)
+    0x080038f2   0x080038f2   0x0000000e   Code   RO         2020    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08003900   0x08003900   0x0000003c   Data   RO         1851    .rodata.DbgUartCmds  uart_dbg.o
+    0x0800393c   0x0800393c   0x00000016   Data   RO         1846    .rodata.PmuCmdDesc  uart_dbg.o
+    0x08003952   0x08003952   0x0000000b   Data   RO         1850    .rodata.PrintCmdDesc  uart_dbg.o
+    0x0800395d   0x0800395d   0x00000019   Data   RO         1843    .rodata.SetPrintDesc  uart_dbg.o
+    0x08003976   0x08003976   0x0000000e   Data   RO         1844    .rodata.ShowDevCfgDesc  uart_dbg.o
+    0x08003984   0x08003984   0x00000014   Data   RO         1847    .rodata.TestSndHostDesc  uart_dbg.o
+    0x08003998   0x08003998   0x00000020   Data   RO         1962    .rodata.U1ByteCmds  uart_to_host.o
+    0x080039b8   0x080039b8   0x00000010   Data   RO         1842    .rodata.commandParaErr  uart_dbg.o
+    0x080039c8   0x080039c8   0x0000001c   Data   RO            8    .rodata.str1.1      main.o
+    0x080039e4   0x080039e4   0x0000002b   Data   RO         1845    .rodata.str1.1      uart_dbg.o
+    0x08003a0f   0x08003a0f   0x00000048   Data   RO         1871    .rodata.str1.1      gpio.o
+    0x08003a57   0x08003a57   0x00000057   Data   RO         1893    .rodata.str1.1      option.o
+    0x08003aae   0x08003aae   0x0000007e   Data   RO         1920    .rodata.str1.1      pwr_manage.o
+    0x08003b2c   0x08003b2c   0x000000a6   Data   RO         1961    .rodata.str1.1      uart_to_host.o
+    0x08003bd2   0x08003bd2   0x00000030   Data   RO         1986    .rodata.str1.1      uart_to_lock.o
+    0x08003c02   0x08003c02   0x00000002   PAD
+    0x08003c04   0x08003c04   0x00000020   Data   RO         2017    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003c38, Size: 0x000025b8, Max: 0x00006000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003c28, Size: 0x000025b8, Max: 0x00006000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08003c38   0x00000004   Data   RW           28    .data.SystemCoreClock  system_gd32l23x.o
-    0x20000004   0x08003c3c   0x00000004   PAD
+    0x20000000   0x08003c28   0x00000004   Data   RW           28    .data.SystemCoreClock  system_gd32l23x.o
+    0x20000004   0x08003c2c   0x00000004   PAD
     0x20000008        -       0x00000115   Zero   RW         1841    .bss.DbgUartInf     uart_dbg.o
-    0x2000011d   0x08003c3c   0x00000003   PAD
+    0x2000011d   0x08003c2c   0x00000003   PAD
     0x20000120        -       0x00000004   Zero   RW           11    .bss.DevConfig      main.o
     0x20000124        -       0x0000000c   Zero   RW            9    .bss.DevStatus      main.o
     0x20000130        -       0x00000002   Zero   RW         1870    .bss.IrCutInf       gpio.o
@@ -3864,7 +3862,7 @@ Memory Map of the image
     0x2000013e        -       0x00001060   Zero   RW         1960    .bss.UartHostInf    uart_to_host.o
     0x2000119e        -       0x00001012   Zero   RW         1985    .bss.UartLockInf    uart_to_lock.o
     0x200021b0        -       0x00000001   Zero   RW           10    .bss.g_IntSysTick   main.o
-    0x200021b1   0x08003c3c   0x00000003   PAD
+    0x200021b1   0x08003c2c   0x00000003   PAD
     0x200021b4        -       0x00000004   Zero   RW         1869    .bss.start_power_off  gpio.o
     0x200021b8        -       0x00000400   Zero   RW         1790    STACK               startup_gd32l23x.o
 
@@ -3885,8 +3883,8 @@ Image component sizes
       1668         52          0          0          0      13541   gd32l23x_rcu.o
        180         16          0          0          0       2641   gd32l23x_syscfg.o
        782         40          0          0          0      14112   gd32l23x_usart.o
-       848         56         82          0          6       3818   gpio.o
-       272         28         28          0         17       2737   main.o
+       840         52         72          0          6       3790   gpio.o
+       272         28         28          0         17       2726   main.o
        348         36         87          0          0       1590   option.o
       1448        148        126          0         12       4136   pwr_manage.o
         28          8        340          0       1024        684   startup_gd32l23x.o
@@ -3897,9 +3895,9 @@ Image component sizes
       1056         72         48          0       4114       6559   uart_to_lock.o
 
     ----------------------------------------------------------------------
-     14162        864       1152          4       9652     105668   Object Totals
+     14154        860       1144          4       9652     105629   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        10          0          0          0         10          0   (incl. Padding)
+        10          0          2          0         10          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3936,15 +3934,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     14260        882       1152          4       9652     105548   Grand Totals
-     14260        882       1152          4       9652     105548   ELF Image Totals
-     14260        882       1152          4          0          0   ROM Totals
+     14252        878       1144          4       9652     105509   Grand Totals
+     14252        878       1144          4       9652     105509   ELF Image Totals
+     14252        878       1144          4          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                15412 (  15.05kB)
+    Total RO  Size (Code + RO Data)                15396 (  15.04kB)
     Total RW  Size (RW Data + ZI Data)              9656 (   9.43kB)
-    Total ROM Size (Code + RO Data + RW Data)      15416 (  15.05kB)
+    Total ROM Size (Code + RO Data + RW Data)      15400 (  15.04kB)
 
 ==============================================================================
 
